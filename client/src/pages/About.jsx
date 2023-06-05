@@ -18,7 +18,7 @@ function About() {
   return (
     <Container style={{ height: '100vh' }}>
       <Row className="d-flex align-items-center justify-content-center" style={{ height: '90%' }}>
-        <Col lg={6} md={6} xs={12}>
+        <Col lg={6} md={6} xs={12} className="p-4">
 
           <h1 className='name'>Tianxiang Ren</h1>
           <br/>
@@ -27,17 +27,17 @@ function About() {
 I am looking for an internship position in Summer or coop in Fall as a Software Developer. Please feel free to get in touch with me on LinkedIn or via email.</p>
           <div>
           <br/>
-          <a href="https://www.linkedin.com/in/rentxiang/" className="linkedin social">
+          <a href="https://www.linkedin.com/in/rentxiang/" className="p-2">
           <GitHubIcon color="action" fontSize="large" />
           </a>
-          <a href="https://github.com/rentxiang" className="github social">
+          <a href="https://github.com/rentxiang" className="p-2">
           <LinkedInIcon color="action" fontSize="large" />
         
         </a>
         
         </div>
         </Col>
-        <Col lg={3} md={6} xs={12}>
+        <Col lg={3} md={6} xs={12} className="p-4">
           <img src={Dylan} className="App-logo" alt="logo" />
         </Col>
       </Row>
