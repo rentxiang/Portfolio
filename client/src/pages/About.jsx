@@ -8,6 +8,7 @@ import Dylan from "../assets/kid_Dylan.jpeg";
 import React from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/Email';
 
 function About() {
   <style>
@@ -27,13 +28,15 @@ function About() {
 I am looking for an internship position in Summer or coop in Fall as a Software Developer. Please feel free to get in touch with me on LinkedIn or via email.</p>
           <div>
           <br/>
-          <a href="https://www.linkedin.com/in/rentxiang/" className="p-2">
+          <a href="https://www.linkedin.com/in/rentxiang/" className="p-3">
           <GitHubIcon color="action" fontSize="large" />
           </a>
-          <a href="https://github.com/rentxiang" className="p-2">
+          <a href="https://github.com/rentxiang" className="p-3">
           <LinkedInIcon color="action" fontSize="large" />
-        
-        </a>
+          </a>
+          <a href="https://rentxiang@gmail.com" className="p-3">
+          <EmailIcon color="action" fontSize="large" />
+          </a>
         
         </div>
         </Col>
