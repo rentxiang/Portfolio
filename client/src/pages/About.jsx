@@ -9,6 +9,7 @@ import React from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
+import Projects from '../components/Projects';
 
 function About() {
   <style>
@@ -37,13 +38,14 @@ I am looking for an internship position in Summer or coop in Fall as a Software 
           <a href="https://rentxiang@gmail.com" className="p-3">
           <EmailIcon color="action" fontSize="large" />
           </a>
-        
-        </div>
+          </div>
         </Col>
         <Col lg={3} md={6} xs={12} className="p-4">
           <img src={Dylan} className="App-logo" alt="logo" />
         </Col>
       </Row>
+      <hr/>
+      <Projects/>
       
     </Container>
   );

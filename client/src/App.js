@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom"
 import About from "./pages/About"	
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Projects from './components/Projects';
 
 function App() {
   return (
