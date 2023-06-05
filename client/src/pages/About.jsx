@@ -12,15 +12,12 @@ import EmailIcon from '@mui/icons-material/Email';
 import Projects from '../components/Projects';
 
 function About() {
-  <style>
-    font-family: input-mono, monospace;
-    font-weight: 400;
-    font-style: italic;
-  </style>
+
   return (
-    <Container style={{ height: '100vh' }}>
-      <Row className="d-flex align-items-center justify-content-center" style={{ height: '90%' }}>
-        <Col lg={6} md={6} xs={12} className="p-4">
+    <section>
+    <Container>
+      <Row className="d-flex align-items-center justify-content-center " >
+        <Col lg={6} md={6} className="p-4">
 
           <h1 className='name'>Tianxiang Ren</h1>
           <br/>
@@ -40,15 +37,21 @@ I am looking for an internship position in Summer or coop in Fall as a Software 
           </a>
           </div>
         </Col>
-        <Col lg={3} md={6} xs={12} className="p-4">
+        <Col lg={3} md={6} className="p-4">
           <img src={Dylan} className="App-logo" alt="logo" />
         </Col>
       </Row>
-      <hr/>
-      {/* <Projects/> */}
-
+      
+      <Row >
+        <hr/>
+        <Projects/>
+      </Row>
       
     </Container>
+    </section>
+
+    
+
   );
 }
 
