@@ -24,7 +24,7 @@ function About() {
           <br/>
           <p className='intro'>Hi, there! 👋 I am an aspiring software developer and enjoy discovering new ideas and technologies while diving. Currently I am pursuing my Masters in Information Systems at Northeastern University, I have proficient technical skills in software and web development. </p>
           <p className='intro'>I am passionate about solving complex business problems and my academic experience served me well in developing my collaboration skills. 
-I am looking for an internship position in summer or coop in fall as a Software Developer. Please feel free to get in touch with me on LinkedIn or via email.</p>
+I am looking for an internship position in Summer or coop in Fall as a Software Developer. Please feel free to get in touch with me on LinkedIn or via email.</p>
           <div>
           <br/>
           <a href="https://www.linkedin.com/in/rentxiang/" className="linkedin social">
