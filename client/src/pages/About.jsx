@@ -45,6 +45,8 @@ I am looking for an internship position in Summer or coop in Fall as a Software 
         </Col>
       </Row>
       <hr/>
+      {/* <Projects/> */}
+
       
     </Container>
   );
