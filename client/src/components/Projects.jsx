@@ -9,8 +9,15 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import tract from "../assets/tract.png";
+import Box from '@mui/material/Box';
+import ArrowIcon from '@mui/icons-material/ArrowForwardIos';
 
 const Projects = () =>{
+
+    const linkStyle = {
+        color: 'inherit',
+        textDecoration: 'none'
+      };
 
     return(
         <section>
@@ -22,19 +29,22 @@ const Projects = () =>{
                 </Col>
                 <Col lg={3} md={6}></Col>
             </Row>
-            <Row className='d-flex align-items-center justify-content-center transparent-section' style={{marginTop:100}}>
-                <Col lg={6} md={6}  className='d-flex align-items-center justify-content-left'>
-                <h4 className='name'>TRACT</h4>
-                <section className="color-1">
+            <Row style={{marginTop:100}}>
+                <Box component="span" sx={{ p: 2, borderBottom: '1px solid grey' }}>
+                <h4 className='name'>TRACT<a href="https://usetract.com"> 
+                            <ArrowIcon />
+                            </a></h4>
+                </Box>
+               
                 
-				<h2 className='projh2'>TRACT</h2>
+                
+				{/* <h2 className='projh2'>TRACT</h2>
 				<nav className="nav-fillpath">
 					<a className="next" href="https://usetract.com">
 						<span className="icon-wrap"></span>
 						<h3><strong>TRACT</strong>'s Official Website</h3>
 					</a>
-				</nav>
-			    </section>
+				</nav> */}
                 {/* <Card style={{height:400, width:300}}>
                     <CardMedia
                         component="img"
@@ -51,21 +61,25 @@ const Projects = () =>{
                     </CardContent>
                    
                     </Card> */}
-                </Col>
-                <Col lg={6} md={6}  className='d-flex align-items-center justify-content-left'>
-                    <h4 className='name'>Movie<span style={{color:"red"}}>Prox</span></h4>
-                    <section className="color-1">
+                </Row>
+                <Row style={{margin:50}}>
+                    <Box component="span" sx={{ p: 2, borderBottom: '1px solid grey' }}>
+
+                    <h4 className='name'>Movie<span style={{color:"red"}}>Prox</span><a href="https://tianxiangren.vercel.app"> 
+                            <ArrowIcon />
+                            </a></h4>
                     
-                    <h2 className='projh2'>MovieProx</h2>
+                    </Box>
+                    
+                    {/* <h2 className='projh2'>MovieProx</h2>
                     <nav className="nav-fillpath">
                         <a className="next" href="https://movieprox.vercel.app/">
                             <span className="icon-wrap"></span>
                             <h3><strong>MovieProx </strong>Website</h3>
                         </a>
-                    </nav>
-                    </section>
-                </Col>
-            </Row>
+                    </nav> */}
+                    
+                </Row>
         </Container>    
         </section>
         
