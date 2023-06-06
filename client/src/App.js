@@ -1,5 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import '../src/ArrowNavigationStyles-master/css/component.css'
+import '../src/ArrowNavigationStyles-master/css/demo.css'
+import '../src/ArrowNavigationStyles-master/css/normalize.css'
+
 import { Route, Routes } from "react-router-dom"
 import About from "./pages/About"	
 
