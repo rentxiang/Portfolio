@@ -14,16 +14,16 @@ import Projects from '../components/Projects';
 function About() {
 
   return (
-    <section>
+    <section style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
     <Container>
-      <Row className="d-flex align-items-center justify-content-center " >
+      <Row className="d-flex p-7 align-items-center justify-content-center" >
         <Col lg={6} md={6} className="p-4">
 
-          <h1 className='name'>Tianxiang Ren</h1>
+          <h1 className='name' >Tianxiang Ren</h1>
           <br/>
-          <p className='intro'>Hi, there! 👋 I am an aspiring software developer and enjoy discovering new ideas and technologies while diving. Currently I am pursuing my Masters in Information Systems at Northeastern University, I have proficient technical skills in software and web development. </p>
-          <p className='intro'>I am passionate about solving complex business problems and my academic experience served me well in developing my collaboration skills. 
-I am looking for an internship position in Summer or coop in Fall as a Software Developer. Please feel free to get in touch with me on LinkedIn or via email.</p>
+          <p className='intro'>Hi, there! 👋 I am an aspiring software developer who enjoys discovering new ideas and technologies while diving.  </p>
+          <p className='intro'>Currently I am pursuing my Masters in Information Systems at Northeastern University, interning with <span className='bold' ><a href="https://usetract.com" target="_blank" >TRACT</a></span> as a software development intern.</p>
+          <p className='intro'>I have proficient technical skills in software and web development and passionate about solving complex business problems. Please feel free to get in touch with me on LinkedIn or via email.</p>
           <div>
           <br/>
           <a href="https://www.linkedin.com/in/rentxiang/" className="p-3">
@@ -42,8 +42,9 @@ I am looking for an internship position in Summer or coop in Fall as a Software 
         </Col>
       </Row>
       
-      <Row >
-        <hr/>
+      <Row style={{paddingTop:"100px"}} >
+      <hr />
+
         <Projects/>
       </Row>
       

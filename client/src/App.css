@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 215px;
+  height: 170px;
   pointer-events: none;
 }
 
@@ -47,4 +47,10 @@
   font-family: input-mono, monospace;
   font-weight: 200;
   font-style: normal;
+}
+
+.bold{
+  font-family: input-mono-compressed, monospace;
+  font-weight: 700;
+  font-style: italic;
 }
