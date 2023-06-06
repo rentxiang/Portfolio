@@ -29,14 +29,24 @@ const Projects = () =>{
                 </Col>
                 <Col lg={3} md={6}></Col>
             </Row>
-            <Row style={{marginTop:100}}>
-                <Box component="span" sx={{ p: 2, borderBottom: '1px solid grey' }}>
-                <h4 className='name'>TRACT<a href="https://usetract.com"> 
-                            <ArrowIcon />
-                            </a></h4>
+            
+            <Row style={{ marginTop: 100 }}>
+                <Box component="span" sx={{ p: 2, borderBottom: '1px solid grey', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <h4 className='name' style={{ textAlign: 'left' }}>TRACT</h4>
+                    <a href="https://usetract.com">
+                    <ArrowIcon style={{ marginLeft: '10px' }} />
+                    </a>
                 </Box>
-               
-                
+            </Row>
+            <Row style={{ marginTop: 100 }}>
+                <Box component="span" sx={{ p: 2, borderBottom: '1px solid grey', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <h4 className='name' style={{ textAlign: 'left' }}>Movie<span style={{color:"red"}}>Prox</span></h4>
+                    <a href="https://tianxiangren.vercel.app">
+                    <ArrowIcon style={{ marginLeft: '10px', }} />
+                    </a>
+                </Box>
+            </Row>
+            
                 
 				{/* <h2 className='projh2'>TRACT</h2>
 				<nav className="nav-fillpath">
@@ -61,25 +71,7 @@ const Projects = () =>{
                     </CardContent>
                    
                     </Card> */}
-                </Row>
-                <Row style={{margin:50}}>
-                    <Box component="span" sx={{ p: 2, borderBottom: '1px solid grey' }}>
-
-                    <h4 className='name'>Movie<span style={{color:"red"}}>Prox</span><a href="https://tianxiangren.vercel.app"> 
-                            <ArrowIcon />
-                            </a></h4>
-                    
-                    </Box>
-                    
-                    {/* <h2 className='projh2'>MovieProx</h2>
-                    <nav className="nav-fillpath">
-                        <a className="next" href="https://movieprox.vercel.app/">
-                            <span className="icon-wrap"></span>
-                            <h3><strong>MovieProx </strong>Website</h3>
-                        </a>
-                    </nav> */}
-                    
-                </Row>
+                
         </Container>    
         </section>
         
