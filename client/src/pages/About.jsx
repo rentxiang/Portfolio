@@ -52,7 +52,7 @@ function About() {
           <p className='intro'>Also who will surprise you with exceptional experience.</p> */}
           {/* <p className='intro'>Hi, there! 👋 My name is Tianxiang Ren, based in San Francisco bay area.  </p> */}
           <p className='intro' style={{ textAlign: 'left' }}>👋 Hi, there! I am an aspiring software developer who enjoys discovering new ideas and technologies while diving.  </p>
-          <p className='intro' style={{ textAlign: 'left' }}>Currently I am pursuing my Masters in Information Systems at Northeastern University, interning with <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link> as a software development intern.</p>
+          <p className='intro' style={{ textAlign: 'left' }}>Currently I am pursuing my Masters in Information Systems at Northeastern University, interning at <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link> as a software development intern.</p>
           <p className='intro' style={{ textAlign: 'left' }}>I am a full-stack developer specializing in MERN stack Front-end and Back-end jobs. I am looking for a intern position this year or new grad job in 2024. Please feel free to get in touch with me on LinkedIn or via email.</p>
           <div>
           <br/>

@@ -16,6 +16,8 @@ import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Navbar from '../components/Navbar';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+
 
 function Me() {
 
@@ -43,12 +45,10 @@ function Me() {
       <Row className="d-flex p-7 align-items-center justify-content-center"  style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '60vh' }}>
         <Col lg={8} md={8} className="p-4">
 
-          <h1 className='name'style={{ textAlign: 'left' }} >About me</h1>
+          <h1 className='name'style={{ textAlign: 'left' }} ><ArrowForwardIosIcon xs={{fontSize:"large", color:"red"}}/> About me</h1>
           <br/>
           <p className='intro'style={{ textAlign: 'left' }}>My name is Tianxiang Ren, based in San Francisco bay area.  </p>
-          <p className='intro'style={{ textAlign: 'left' }}>I am an aspiring software developer who enjoys discovering new ideas and technologies while diving.  </p>
-          <p className='intro'style={{ textAlign: 'left' }}>Currently I am pursuing my Masters in Information Systems at Northeastern University, interning with <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link> as a software development intern.</p>
-          <p className='intro'style={{ textAlign: 'left' }}>I have proficient technical skills in software and web development and passionate about solving complex business problems. I am looking for a intern position this year or new grad job in 2024. Please feel free to get in touch with me on LinkedIn or via email.</p>
+          <p className='intro'style={{ textAlign: 'left' }}>I have proficient technical skills in software and web development and passionate about solving complex business problems. I am looking for a intern position this year or new grad job in 2024. Please feel free to get in touch with me on LinkedIn or via email at: rentxiang@gmail.com.</p>
           {/* <p className='intro'>Currently I am pursuing my Masters in Information Systems at Northeastern University, interning with <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link> as a software development intern.</p> */}
           <p className='intro'style={{ textAlign: 'left' }}>I am... still working on this page!🤫</p>
           <div>
