@@ -82,10 +82,10 @@ function Me() {
         </Link>,
         <div>
                 <a href="https://www.linkedin.com/in/rentxiang/" className="p-3">
-            <GitHubIcon color="" fontSize="large" />
+            <LinkedInIcon color="" fontSize="large" />
             </a>
             <a href="https://github.com/rentxiang" className="p-3">
-            <LinkedInIcon color="" fontSize="large" />
+            <GitHubIcon color="" fontSize="large" />
             </a>
     
             <a href="mailto:rentxiang@gmail.com" className="p-3">
