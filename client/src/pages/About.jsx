@@ -14,7 +14,7 @@ import Footer from '../components/Footer';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Navbar from '../components/Navbar';
 
 
@@ -45,15 +45,15 @@ function About() {
       </Row> */}
       <Navbar/>
       <Row className="d-flex p-7 align-items-center justify-content-center"  style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '60vh' }}>
-        <Col lg={6} md={6} className="p-4">
-          <a href='/me'><h1 className='name p-4' >Tianxiang Ren</h1></a>
+        <Col lg={8} md={8} className="p-4">
+          <a href='/me'><h1 className='name py-4'  style={{ textAlign: 'left' }}><ArrowForwardIosIcon xs={{fontSize:"large", color:"red"}}/> Tianxiang Ren</h1></a>
           <br/>
           {/* <p className='intro'>Hi, there! 👋 I am an aspiring full-stack developer specializing in MERN stack Front-end and Back-end jobs. </p>
           <p className='intro'>Also who will surprise you with exceptional experience.</p> */}
           {/* <p className='intro'>Hi, there! 👋 My name is Tianxiang Ren, based in San Francisco bay area.  </p> */}
-          <p className='intro'>Hi, there! 👋 I am an aspiring software developer who enjoys discovering new ideas and technologies while diving.  </p>
-          <p className='intro'>Currently I am pursuing my Masters in Information Systems at Northeastern University, interning with <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link> as a software development intern.</p>
-          <p className='intro'>I am a full-stack developer specializing in MERN stack Front-end and Back-end jobs. I am looking for a intern position this year or new grad job in 2024. Please feel free to get in touch with me on LinkedIn or via email.</p>
+          <p className='intro' style={{ textAlign: 'left' }}>👋 Hi, there! I am an aspiring software developer who enjoys discovering new ideas and technologies while diving.  </p>
+          <p className='intro' style={{ textAlign: 'left' }}>Currently I am pursuing my Masters in Information Systems at Northeastern University, interning with <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link> as a software development intern.</p>
+          <p className='intro' style={{ textAlign: 'left' }}>I am a full-stack developer specializing in MERN stack Front-end and Back-end jobs. I am looking for a intern position this year or new grad job in 2024. Please feel free to get in touch with me on LinkedIn or via email.</p>
           <div>
           <br/>
           <Row style={{marginTop:50}}>
@@ -76,7 +76,7 @@ function About() {
           
           </div>
         </Col>
-        <Col lg={3} md={6} className="p-4">
+        <Col lg={2} md={2} className="p-4">
           <img src={Dylan} className="App-logo" alt="logo" />
         </Col>
       </Row>

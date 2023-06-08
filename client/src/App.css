@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  color:white;
+  background-color: black;
 }
 
 .App-logo {
@@ -61,7 +63,7 @@ font-style: normal;
 }
 
 a:link {
-  color: black;
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
@@ -73,13 +75,13 @@ a:visited {
 }
 
 a:hover {
-  color: gray;
+  color: #914244;
   background-color: transparent;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:active {
-  color: yellow;
+  color: #914244;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -95,4 +97,8 @@ a:active {
 
 .up {
   transform: rotate(0deg);
+}
+
+.active {
+  color: #914244;
 }

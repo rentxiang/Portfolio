@@ -23,12 +23,12 @@ function Me() {
     
     <Link underline="hover" key="1" color="inherit" href="Resume_Tianxiang_Ren.pdf" download="Resume_Tianxiang_Ren.pdf">
         
-     <span className='intro'>Resume</span> 
+     <span className='intro'><NavigateNextIcon/> Get My Resume</span> 
     </Link>,
-    <Link underline="hover" key="1" color="inherit" href="/home">
-      <span className='intro'>Home</span> 
+    // <Link underline="hover" key="1" color="inherit" href="/home">
+    //   <span className='intro'>Home</span> 
 
-    </Link>,
+    // </Link>,
   //   <Link underline="hover" key="1" color="inherit" href="/about">
   //      <span className='intro'>About</span> 
 
@@ -41,16 +41,16 @@ function Me() {
       <Navbar/>
 
       <Row className="d-flex p-7 align-items-center justify-content-center"  style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '60vh' }}>
-        <Col lg={6} md={6} className="p-4">
+        <Col lg={8} md={8} className="p-4">
 
-          <h1 className='name' >About me</h1>
+          <h1 className='name'style={{ textAlign: 'left' }} >About me</h1>
           <br/>
-          <p className='intro'>My name is Tianxiang Ren, based in San Francisco bay area.  </p>
-          <p className='intro'>I am an aspiring software developer who enjoys discovering new ideas and technologies while diving.  </p>
-          <p className='intro'>Currently I am pursuing my Masters in Information Systems at Northeastern University, interning with <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link> as a software development intern.</p>
-          <p className='intro'>I have proficient technical skills in software and web development and passionate about solving complex business problems. I am looking for a intern position this year or new grad job in 2024. Please feel free to get in touch with me on LinkedIn or via email.</p>
+          <p className='intro'style={{ textAlign: 'left' }}>My name is Tianxiang Ren, based in San Francisco bay area.  </p>
+          <p className='intro'style={{ textAlign: 'left' }}>I am an aspiring software developer who enjoys discovering new ideas and technologies while diving.  </p>
+          <p className='intro'style={{ textAlign: 'left' }}>Currently I am pursuing my Masters in Information Systems at Northeastern University, interning with <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link> as a software development intern.</p>
+          <p className='intro'style={{ textAlign: 'left' }}>I have proficient technical skills in software and web development and passionate about solving complex business problems. I am looking for a intern position this year or new grad job in 2024. Please feel free to get in touch with me on LinkedIn or via email.</p>
           {/* <p className='intro'>Currently I am pursuing my Masters in Information Systems at Northeastern University, interning with <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link> as a software development intern.</p> */}
-          <p className='intro'>I am... still working on this page!🤫</p>
+          <p className='intro'style={{ textAlign: 'left' }}>I am... still working on this page!🤫</p>
           <div>
           <br/>
           
@@ -63,8 +63,8 @@ function Me() {
         </Stack>
           </div>
         </Col>
-        <Col lg={3} md={6} className="p-4">
-          <img src={Dylan} style={{width:500}} alt="logo" />
+        <Col lg={2} md={2} className="p-4">
+          <img src={Dylan} style={{width:300}} alt="logo" />
         </Col>
       </Row>
       

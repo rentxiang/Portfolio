@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Box, Typography } from "@mui/material";
 import Dylan from "../assets/kid_Dylan.jpeg";
-import React, {useRef} from "react";
+import React, {useState, useEffect} from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
@@ -21,17 +21,54 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 const Navbar =  () =>{
     
+    const [activeIndex, setActiveIndex] = useState(null);
+
+    useEffect(() => {
+      const storedIndex = localStorage.getItem('activeIndex');
+      if (storedIndex) {
+        setActiveIndex(Number(storedIndex));
+      }
+    }, []);
+
+    const handleItemClick = (index) => {
+        if (activeIndex === index) {
+          setActiveIndex(null);
+          localStorage.removeItem('activeIndex');
+        } else {
+          setActiveIndex(index);
+          localStorage.setItem('activeIndex', index.toString());
+        }
+      };
 
     const breadcrumbs = [
-        <Link underline="hover" key="1" color="inherit" href="/">
-       <span className='intro'>Home</span> 
+ 
+    <Link underline="" key="1" color="inherit" href="/">
+    <span
+      className={`intro ${activeIndex === 0 ? 'active' : ''}`}
+      onClick={() => handleItemClick(0)}
+    >
+      {activeIndex === 0 && <NavigateNextIcon />}
+      Home
+    </span>
+  </Link>,
+        <Link href="/#projects" underline="" key="1" color="inherit">
+        <span
+          className={`intro ${activeIndex === 1 ? 'active' : ''}`}
+          onClick={() => handleItemClick(1)}
+        >
+          {activeIndex === 1 && <NavigateNextIcon />}
+          Projects
+        </span>
       </Link>,
-       <Link href="/#projects" underline="hover" key="1" color="inherit">
-       <span className='intro'>Projects</span>
+      <Link underline="" key="1" color="inherit" href="/me">
+        <span
+          className={`intro ${activeIndex === 2 ? 'active' : ''}`}
+          onClick={() => handleItemClick(2)}
+        >
+          {activeIndex === 2 && <NavigateNextIcon />}
+          About Me
+        </span>
       </Link>,
-        <Link underline="hover" key="1" color="inherit" href="/me">
-         <span className='intro'>About Me</span> 
-        </Link>,
        
        
       
@@ -41,22 +78,16 @@ const Navbar =  () =>{
     return(
         <Container>
 
-            <Row className="d-flex justify-content-end" style={{ marginTop: 50 }}>
-                <Col xs="auto" className="ms-auto">
+            <Row className="d-flex justify-content-end" style={{ paddingTop: 50 }}>
+                <Col lg={7}/>
+                <Col lg={3} className="">
                     <Breadcrumbs separator="" aria-label="breadcrumb">
                     {breadcrumbs}
                     </Breadcrumbs>
                     
                 </Col>
             </Row>
-            {/* <Row className="d-flex align-items-center justify-content-end">   
-                <Box >
-                <Breadcrumbs separator="-" aria-label="breadcrumb" className="d-flex p-7 align-items-center justify-content-center ">
-                    {breadcrumbs}
-                </Breadcrumbs>
-                </Box>       
-                
-            </Row> */}
+            
         </Container>
     )
 }

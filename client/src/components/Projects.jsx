@@ -64,14 +64,9 @@ const Projects = () =>{
         <section  className=''>
             <Container className="p-4">
             <Row className='align-items-center justify-content-center'>
-                <Col lg={6} md={6} >
-                    <h2 className='name'>Projects</h2>
-
-                </Col>
-                <Col lg={3} md={6}></Col>
-            </Row>
-        {/* project 1 */}
-            <Row  style={{ marginTop: 100 }}>
+                <Col lg={8} md={6} >
+                    <h2 className='name' style={{ textAlign: 'left' }}>Projects</h2>
+                    <Row  style={{ marginTop: 100 }}>
                 
                 {expanded1 ? (
                 <div className='p-0'>
@@ -99,11 +94,12 @@ const Projects = () =>{
                 <Box sx={{ borderBottom: '1px solid grey',display: 'flex', justifyContent: 'space-between', alignItems: 'center'  }}>
                     <div className='intro p-4'> 
                     {/* <p className='intro'style={{ textAlign: 'left' }}> Developed the official website page of <span className='bold'>TRACT</span></p> */}
-                        <p className='intro' style={{ textAlign: 'left' }}><span className="italic">About: </span>Interning with <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link>, I lead a team in frontend development by using TypeScript and React, developed the official website page of <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link>, improving website's UI/UX.</p>
-                        <p className='intro'style={{ textAlign: 'left' }}><span className="italic">Featured: </span>Contribute to the user Authentication and Authorization APIs development and integration with Next.js in the
+                        <p className='intro' style={{ textAlign: 'left' }}>📝<span className="italic"> About: </span>Interning with <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link>, I lead a team in frontend development by using TypeScript and React, developed the official website page of <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link>, improving website's UI/UX.</p>
+                        <p className='intro'style={{ textAlign: 'left' }}>🤖<span className="italic"> TECHS: </span>Typescript, Next.js, React, AWS services</p>
+                        
+                        <p className='intro'style={{ textAlign: 'left' }}>👨‍💻<span className="italic"> MY POSITION: </span>Contribute to the user Authentication and Authorization APIs development and integration with Next.js in the
                 backend, working closely with the team to optimize performance and functionality; Publish website updates with AWS EC2 and Nginx, ensuring seamless deployment and accessibility for end-users.</p>
                         {/* <p className='intro'style={{ textAlign: 'left' }}>Publish website updates with AWS EC2 and Nginx, ensuring seamless deployment and accessibility for end-users</p> */}
-                        <p className='intro'style={{ textAlign: 'left' }}><span className="italic">Techs used in this project: </span>Typescript, Next.js, React, AWS services</p>
 
                     <Breadcrumbs separator=" " aria-label="breadcrumb1" className="d-flex p-4 align-items-center justify-content-center ">
                         {breadcrumbs1}
@@ -165,12 +161,13 @@ const Projects = () =>{
         </Box>
         <Box sx={{ borderBottom: '1px solid grey',display: 'flex', justifyContent: 'space-between', alignItems: 'center'  }}>
                     <div className='intro p-4'> 
-                    <p className='intro' style={{ textAlign: 'left' }}><span className="italic">About: </span> MovieProx is a fullstack responsive Nextflix-like website built with MERN (MongoDB, Express, React, Node.js) stack and the
+                    <p className='intro' style={{ textAlign: 'left' }}>📝<span className="italic"> About: </span> MovieProx is a fullstack responsive Nextflix-like website built with MERN (MongoDB, Express, React, Node.js) stack and the
 Themoviedb API. Users can sign up, search movies, TVs and people, add movies to favorite list, write reviews.</p>
-          <p className='intro'style={{ textAlign: 'left' }}><span className="italic">Featured: </span> Developed server APIs with Express and make API calls to the Themoviedb API by deploying Axios clients; Provided user authentication and protection with JWT and Express Validator; Deployed the application on Vercel and host the database on MongoDB Atlas for cloud storage</p>
+<p className='intro' style={{ textAlign: 'left' }}>🤖<span className="italic"> TECHS: </span>  Javascript, React, Node.js, Mongoose</p>
+
+          <p className='intro'style={{ textAlign: 'left' }}>👨‍💻<span className="italic"> MY POSITION: </span> Developed server APIs with Express and make API calls to the Themoviedb API by deploying Axios clients; Provided user authentication and protection with JWT and Express Validator; Deployed the application on Vercel and host the database on MongoDB Atlas for cloud storage</p>
           {/* <p className='intro'style={{ textAlign: 'left' }}>Provided user authentication and protection with JWT and Express Validator</p> */}
           {/* <p className='intro'style={{ textAlign: 'left' }}>Deployed the application on Vercel and host the database on MongoDB Atlas for cloud storage</p> */}
-                    <p className='intro' style={{ textAlign: 'left' }}><span className="italic">Techs used in this project: </span>  Javascript, React, Node.js, Mongoose</p>
                     <Breadcrumbs separator=" " aria-label="breadcrumb2" className="d-flex p-4 align-items-center justify-content-center ">
                         {breadcrumbs2}
                     </Breadcrumbs>
@@ -206,62 +203,10 @@ Themoviedb API. Users can sign up, search movies, TVs and people, add movies to 
                     </a>
                 </Box> */}
             </Row>
-
-            {/* <Row style={{ marginTop: 50 }}>
-   
-      
-      
-        {expanded3 ? (
-            <div className='p-0'>
-        <Box
-        component="span"
-        sx={{
-            p: 2,
-            // borderBottom: '1px solid grey',
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            cursor: 'pointer'
-        }}
-        onClick={handleToggle3}
-        >
-        <h4 className='name' style={{ textAlign: 'left' }}>TRACT</h4>
-      
-          
-        <ArrowIcon
-            className={`rotateIcon ${expanded3 ? 'down' : 'up'}`}
-            style={{ marginLeft: '10px' }}
-        />
+                </Col>
+                <Col lg={2} md={6}></Col>
+            </Row>
         
-        </Box>
-        <Box sx={{  borderBottom: '1px solid grey',display: 'flex' }}>
-            <span className='intro'>- sss</span>
-            <img src={tract} style={{width:374}} alt="" />
-        </Box>
-        </div>
-            ):(
-            <Box
-            component="span"
-            sx={{
-                p: 2,
-                borderBottom: '1px solid grey',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                cursor: 'pointer'
-            }}
-            onClick={handleToggle3}
-            >
-            <h4 className='name' style={{ textAlign: 'left' }}>TRACT</h4>
-            <ArrowIcon
-                className={`rotateIcon ${expanded3 ? 'down' : 'up'}`}
-                style={{ marginLeft: '10px' }}
-            />
-    </Box>
-      )}
-    </Row> */}
-    
-                
 
                 
         </Container>    
