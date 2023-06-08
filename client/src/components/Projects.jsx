@@ -132,14 +132,14 @@ const Projects = () =>{
                             {/* <p className='intro'style={{ textAlign: 'left' }}> Developed the official website page of <span className='bold'>TRACT</span></p> */}
                                 <p className="boldsub pt-4">  📝 ABOUT: </p> 
 
-                                <p className='intro' style={{ textAlign: 'left' }}>Interning at <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link>, I lead a team in frontend development by using <br/>TypeScript and React, developed the official website page of <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link>,  <br/>improving website's UI/UX.</p>
+                                <p className='intro' style={{ textAlign: 'left' }}>Interning at <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link>, I lead a team in frontend development by using <br/>TypeScript and React, developed the official website page of <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link>,  <br/>improving website's UI/UX</p>
                                 <p className="boldsub pt-4">  🤖 TECHS: </p> 
                                 
                                 <p className='intro'style={{ textAlign: 'left' }}>Typescript, Next.js, React, AWS services</p>
                                 <p className="boldsub pt-4">  👨‍💻 MY POSITION: </p> 
                                  
                                 <p className='intro'style={{ textAlign: 'left' }}>Contribute to the user Authentication and Authorization APIs development and integration with Next.js in the
-                        backend, working closely with the team to optimize performance and functionality; Publish website updates with AWS EC2 and Nginx, ensuring seamless deployment and accessibility for end-users.</p>
+                        backend, working closely with the team to optimize performance and functionality; Publish website updates with AWS EC2 and Nginx, ensuring seamless deployment and accessibility for end-users</p>
                                 {/* <p className='intro'style={{ textAlign: 'left' }}>Publish website updates with AWS EC2 and Nginx, ensuring seamless deployment and accessibility for end-users</p> */}
 
                             <Breadcrumbs separator=" " aria-label="breadcrumb1" className="d-flex px-0 p-4 ">
@@ -208,13 +208,13 @@ const Projects = () =>{
                                         <img src={MovieProx} className='p-4 px-0' style={{ maxWidth: '100%', height: 'auto' }} alt="" />
                                         <p className="boldsub pt-4">  📝 ABOUT: </p> 
                                         <p className='intro' style={{ textAlign: 'left' }}>MovieProx is a fullstack responsive Nextflix-like website built with MERN (MongoDB, Express, React, Node.js) stack and the
-                                    Themoviedb API. Users can sign up, search movies, TVs and people, add movies to favorite list, write reviews.</p>
+                                    Themoviedb API. Users <br/>can sign up, search movies, TVs and people, add movies to favorite list,<br/> write reviews</p>
                                     <p className="boldsub pt-4">  🤖 TECHS: </p> 
 
                                     <p className='intro' style={{ textAlign: 'left' }}>Javascript, React, Node.js, Mongoose</p>
                                     <p className="boldsub pt-4">  👨‍💻 MY POSITION: </p> 
                                     
-                                    <p className='intro'style={{ textAlign: 'left' }}>Developed server APIs with Express and make API calls to the Themoviedb API by deploying Axios clients; Provided user authentication and protection with JWT and Express Validator; Deployed the application on Vercel and host the database on MongoDB Atlas for cloud storage</p>
+                                    <p className='intro'style={{ textAlign: 'left' }}>Developed server APIs with Express and make API calls to the Themoviedb API <br/>by deploying Axios clients; Provided user authentication and protection with JWT and Express Validator; Deployed the application on Vercel and host the database on MongoDB Atlas for cloud storage</p>
                                     {/* <p className='intro'style={{ textAlign: 'left' }}>Provided user authentication and protection with JWT and Express Validator</p> */}
                                     {/* <p className='intro'style={{ textAlign: 'left' }}>Deployed the application on Vercel and host the database on MongoDB Atlas for cloud storage</p> */}
                                         <Breadcrumbs separator=" " aria-label="breadcrumb2" className="d-flex px-0 p-4  ">
