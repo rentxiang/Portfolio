@@ -37,6 +37,11 @@
   }
 }
 
+.italic{
+  font-family: input-mono-compressed, monospace;
+font-weight: 400;
+font-style: italic;
+}
 .name {
   font-family: input-mono, monospace;
 font-weight: 400;
