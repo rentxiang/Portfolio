@@ -11,43 +11,83 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import Projects from '../components/Projects';
 import Footer from '../components/Footer';
+import Breadcrumbs from '@mui/material/Breadcrumbs';
+import Link from '@mui/material/Link';
+import Stack from '@mui/material/Stack';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import Navbar from '../components/Navbar';
+
+
 
 function About() {
+
+  const breadcrumbs = [
+    <Link underline="hover" key="1" color="inherit" href="/me">
+     <span className='intro'>About Me</span> 
+    </Link>,
+    // <Link underline="hover" key="1" color="inherit" href="/contact">
+    //   <span className='intro'>Contact</span> 
+
+    // </Link>,
+  //   <Link underline="hover" key="1" color="inherit" href="/about">
+  //      <span className='intro'>About</span> 
+
+  // </Link>
+  ];
 
   return (
     <section>
     <Container>
+      {/* <Row>
+          <Breadcrumbs separator="-" aria-label="breadcrumb" className="d-flex p-7 align-items-center justify-content-center ">
+            {breadcrumbs}
+          </Breadcrumbs>
+      </Row> */}
+      <Navbar/>
       <Row className="d-flex p-7 align-items-center justify-content-center"  style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '60vh' }}>
         <Col lg={6} md={6} className="p-4">
-
-          <h1 className='name' >Tianxiang Ren</h1>
+          <a href='/me'><h1 className='name p-4' >Tianxiang Ren</h1></a>
           <br/>
+          {/* <p className='intro'>Hi, there! 👋 I am an aspiring full-stack developer specializing in MERN stack Front-end and Back-end jobs. </p>
+          <p className='intro'>Also who will surprise you with exceptional experience.</p> */}
+          {/* <p className='intro'>Hi, there! 👋 My name is Tianxiang Ren, based in San Francisco bay area.  </p> */}
           <p className='intro'>Hi, there! 👋 I am an aspiring software developer who enjoys discovering new ideas and technologies while diving.  </p>
-          <p className='intro'>Currently I am pursuing my Masters in Information Systems at Northeastern University, interning with <span className='bold' ><a href="https://usetract.com" target="_blank" >TRACT</a></span> as a software development intern.</p>
-          <p className='intro'>I have proficient technical skills in software and web development and passionate about solving complex business problems. Please feel free to get in touch with me on LinkedIn or via email.</p>
+          <p className='intro'>Currently I am pursuing my Masters in Information Systems at Northeastern University, interning with <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link> as a software development intern.</p>
+          <p className='intro'>I am a full-stack developer specializing in MERN stack Front-end and Back-end jobs. I am looking for a intern position this year or new grad job in 2024. Please feel free to get in touch with me on LinkedIn or via email.</p>
           <div>
           <br/>
-          <a href="https://www.linkedin.com/in/rentxiang/" className="p-3">
+          <Row style={{marginTop:50}}>
+            <div>
+            <a href="https://www.linkedin.com/in/rentxiang/" className="p-3">
           <GitHubIcon color="action" fontSize="large" />
           </a>
           <a href="https://github.com/rentxiang" className="p-3">
           <LinkedInIcon color="action" fontSize="large" />
           </a>
-          {/* <a href="https://rentxiang@gmail.com" className="p-3">
+
+          <a href="mailto:rentxiang@gmail.com" className="p-3">
           <EmailIcon color="action" fontSize="large" />
-          </a> */}
+          </a>
+          
+            </div>
+
+          </Row>
+          
+          
           </div>
         </Col>
         <Col lg={3} md={6} className="p-4">
           <img src={Dylan} className="App-logo" alt="logo" />
         </Col>
       </Row>
-      
-      <Row style={{paddingTop:0}} >
+      <div >
+      <Row style={{paddingTop:0}} id="projects">
       <hr />
 
-        <Projects/>
+        <Projects  />
       </Row>
+      </div>
+      
       <Footer/>
     </Container>
     </section>

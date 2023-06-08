@@ -9,12 +9,25 @@ import About from "./pages/About"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Projects from './components/Projects';
+import Tract from './pages/Tract';
+import MovieProx from './pages/Movieprox';
+import Me from './pages/Me'
+import Contact from './pages/Contact';
 
 function App() {
   return (
     <div className="App">
-      <About/>
-      
+      <Routes>
+            <Route path="/" element={<About/>} />
+            <Route path="/home" element={<About/>} />
+
+            <Route path="/movieprox" element={<MovieProx/>} />
+            <Route path="/tract" element={<Tract/>} />
+            <Route path="/me" element={<Me/>} />
+            <Route path="/contact" element={<Contact/>} />
+
+
+          </Routes>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

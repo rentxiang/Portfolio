@@ -62,13 +62,13 @@ a:link {
 }
 
 a:visited {
-  color: pink;
+  color: gray;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: green;
+  color: gray;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -77,4 +77,17 @@ a:active {
   color: yellow;
   background-color: transparent;
   text-decoration: underline;
+}
+
+.rotateIcon {
+  transition: transform 0.3s ease; /* 添加过渡效果 */
+  transform: rotate(0deg); /* 初始旋转角度为0度 */
+}
+
+.down {
+  transform: rotate(90deg);
+}
+
+.up {
+  transform: rotate(0deg);
 }
