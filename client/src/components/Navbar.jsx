@@ -23,15 +23,17 @@ const Navbar =  () =>{
     
 
     const breadcrumbs = [
+        <Link underline="hover" key="1" color="inherit" href="/">
+       <span className='intro'>Home</span> 
+      </Link>,
+       <Link href="/#projects" underline="hover" key="1" color="inherit">
+       <span className='intro'>Projects</span>
+      </Link>,
         <Link underline="hover" key="1" color="inherit" href="/me">
          <span className='intro'>About Me</span> 
         </Link>,
-        <Link href="/#projects" underline="hover" key="1" color="inherit">
-        <span className='intro'>Projects</span>
-       </Link>,
-       <Link underline="hover" key="1" color="inherit" href="/">
-       <span className='intro'>Home</span> 
-      </Link>,
+       
+       
       
       ];
      
