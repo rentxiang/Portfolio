@@ -22,6 +22,19 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 function Me() {
 
   const breadcrumbs = [
+    <div>
+    <a href="https://www.linkedin.com/in/rentxiang/" className="p-3">
+  <GitHubIcon color="" fontSize="large" />
+  </a>
+  <a href="https://github.com/rentxiang" className="p-3">
+  <LinkedInIcon color="" fontSize="large" />
+  </a>
+
+  <a href="mailto:rentxiang@gmail.com" className="p-3">
+  <EmailIcon color="" fontSize="large" />
+  </a>
+  
+    </div>,
     
     <Link underline="hover" key="1" color="inherit" href="Resume_Tianxiang_Ren.pdf" download="Resume_Tianxiang_Ren.pdf">
         

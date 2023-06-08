@@ -57,19 +57,19 @@ function About() {
           <div>
           <br/>
           <Row style={{marginTop:50}}>
-            <div>
+            {/* <div>
             <a href="https://www.linkedin.com/in/rentxiang/" className="p-3">
-          <GitHubIcon color="action" fontSize="large" />
+          <GitHubIcon color="" fontSize="large" />
           </a>
           <a href="https://github.com/rentxiang" className="p-3">
-          <LinkedInIcon color="action" fontSize="large" />
+          <LinkedInIcon color="" fontSize="large" />
           </a>
 
           <a href="mailto:rentxiang@gmail.com" className="p-3">
-          <EmailIcon color="action" fontSize="large" />
+          <EmailIcon color="" fontSize="large" />
           </a>
           
-            </div>
+            </div> */}
 
           </Row>
           
