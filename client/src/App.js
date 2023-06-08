@@ -5,7 +5,7 @@ import './App.css';
 // import '../src/ArrowNavigationStyles-master/css/normalize.css'
 
 import { Route, Routes } from "react-router-dom"
-import About from "./pages/About"	
+import Home from "./pages/Home"	
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Projects from './components/Projects';
@@ -18,8 +18,8 @@ function App() {
   return (
     <div className="App">
       <Routes>
-            <Route path="/" element={<About/>} />
-            <Route path="/home" element={<About/>} />
+            <Route path="/" element={<Home/>} />
+            <Route path="/home" element={<Home/>} />
 
             <Route path="/movieprox" element={<MovieProx/>} />
             <Route path="/tract" element={<Tract/>} />

@@ -11,13 +11,38 @@ import Typography from '@mui/material/Typography';
 import tract from "../assets/Tract1.png";
 import Box from '@mui/material/Box';
 import ArrowIcon from '@mui/icons-material/ArrowForwardIos';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const Projects = () =>{
+    const [textProgress, setTextProgress] = useState(0);
+    const loadingTexts = [
+      // "👋 Hi, there! I am an aspiring software developer who enjoys discovering new ideas and technologies while diving.",
+      // "Currently I am pursuing my Masters in Information Systems at Northeastern University, interning at TRACT as a software development intern.",
+      // "I am a full-stack developer specializing in MERN stack Front-end and Back-end jobs. I am looking for an intern position this year or a new grad job in 2024. Please feel free to get in touch with me on LinkedIn or via email."
+      "Projects"
+    ];
+
+    useEffect(() => {
+        const totalTextLength = loadingTexts.reduce((total, text) => total + text.length, 0);
+        const increment = 1;
+    
+        const timer = setInterval(() => {
+          setTextProgress((prevProgress) => prevProgress + increment);
+        }, 100);
+    
+        if (textProgress >= totalTextLength) {
+          clearInterval(timer);
+        }
+    
+        return () => {
+          clearInterval(timer);
+        };
+      }, []);
 
     const linkStyle = {
         color: 'inherit',
@@ -60,12 +85,17 @@ const Projects = () =>{
         // </Link>
 
       ];
+      
     return(
         <section  className=''>
             <Container className="p-4">
             <Row className='align-items-center justify-content-center'>
                 <Col lg={8} md={6} >
-                            <h2 className='name' style={{ textAlign: 'left' }}>Projects</h2>
+                {loadingTexts.map((text, index) => (
+              <h1 className='name py-0'  style={{ textAlign: 'left' }}><ArrowForwardIosIcon xs={{fontSize:"large"}}/> {text.substring(0, textProgress)}</h1>
+
+            ))}
+                            {/* <h2 className='name' style={{ textAlign: 'left' }}><ArrowForwardIosIcon xs={{fontSize:"medium"}}/> Projects</h2> */}
                             <Row  style={{ marginTop: 100 }}>
                         
                         {expanded1 ? (
@@ -75,6 +105,7 @@ const Projects = () =>{
                         component="span"
                         sx={{
                             p: 2,
+                            
                             // borderBottom: '1px solid grey',
                             display: 'flex',
                             justifyContent: 'space-between',
@@ -100,7 +131,7 @@ const Projects = () =>{
                             {/* <p className='intro'style={{ textAlign: 'left' }}> Developed the official website page of <span className='bold'>TRACT</span></p> */}
                                 <p className="boldsub pt-4">  📝 ABOUT: </p> 
 
-                                <p className='intro' style={{ textAlign: 'left' }}>Interning at <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link>, I lead a team in frontend development by using TypeScript and React, developed the official website page of <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link>, improving website's UI/UX.</p>
+                                <p className='intro' style={{ textAlign: 'left' }}>Interning at <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link>, I lead a team in frontend development by using <br/>TypeScript and React, developed the official website page of <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link>,  <br/>improving website's UI/UX.</p>
                                 <p className="boldsub pt-4">  🤖 TECHS: </p> 
                                 
                                 <p className='intro'style={{ textAlign: 'left' }}>Typescript, Next.js, React, AWS services</p>
@@ -122,6 +153,7 @@ const Projects = () =>{
                     component="span"
                     sx={{
                         p: 2,
+                        py: 0,
                         borderBottom: '1px solid grey',
                         display: 'flex',
                         justifyContent: 'space-between',
@@ -130,7 +162,7 @@ const Projects = () =>{
                     }}
                     onClick={handleToggle1}
                     >
-                    <h4 className='name' style={{ textAlign: 'left' }}>TRACT</h4>
+                    <h4 className='name my-0' style={{ textAlign: 'left' }}>TRACT</h4>
                     <ArrowIcon
                         className={`rotateIcon ${expanded1 ? 'down' : 'up'}`}
                         style={{ marginLeft: '10px' }}
@@ -141,7 +173,7 @@ const Projects = () =>{
 
 
                                     {/* project 2 */}
-                                    <Row style={{ marginTop: 50 }}>
+                                    <Row style={{ marginTop: 20}}>
 
                                     {expanded2 ? (
                                         <div className='p-0'>
@@ -157,7 +189,9 @@ const Projects = () =>{
                                     }}
                                     onClick={handleToggle2}
                                     >
-                                    <h4 className='name' style={{ textAlign: 'left' }}>Movie<span style={{color:"red"}}>Prox</span></h4>
+                                    {/* <h4 className='name' style={{ textAlign: 'left' }}>Movie<span style={{color:"red"}}>Prox</span></h4> */}
+                                    <h4 className='name' style={{ textAlign: 'left' }}>MOVIEPROX</h4>
+
 
 
                                     <ArrowIcon
@@ -192,6 +226,7 @@ const Projects = () =>{
                                     component="span"
                                     sx={{
                                     p: 2,
+                                    py: 0,
                                     borderBottom: '1px solid grey',
                                     display: 'flex',
                                     justifyContent: 'space-between',
@@ -200,7 +235,7 @@ const Projects = () =>{
                                     }}
                                     onClick={handleToggle2}
                                     >
-                                    <h4 className='name' style={{ textAlign: 'left' }}>Movie<span style={{color:"red"}}>Prox</span></h4>
+                                    <h4 className='name my-0' style={{ textAlign: 'left ' }}>MOVIEPROX</h4>
                                     <ArrowIcon
                                     className={`rotateIcon ${expanded2 ? 'down' : 'up'}`}
                                     style={{ marginLeft: '10px' }}
