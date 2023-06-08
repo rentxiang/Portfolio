@@ -17,6 +17,7 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 const Projects = () =>{
     const [textProgress, setTextProgress] = useState(0);
@@ -65,8 +66,8 @@ const Projects = () =>{
       };
 
       const breadcrumbs1 = [
-        <Link underline="hover" key="1" color="inherit" href="https://usetract.com" style={{ marginRight: '10px' }} >
-         <span className='intro'>See Project</span> 
+        <Link underline="hover" key="1" color="inherit" href="https://usetract.com" style={{ marginRight: '10px'}} >
+         <span className='boldsub' ><KeyboardArrowRightIcon xs={{fontSize:"small", color:"red"}}/>SEE PROJECT</span> 
         </Link>,
         // <Link underline="hover" key="1" color="inherit" href="/tract">
         //   <span className='intro'>About the Project</span> 
@@ -77,7 +78,8 @@ const Projects = () =>{
 
       const breadcrumbs2 = [
         <Link underline="hover" key="1" color="inherit" href="https://movieprox.vercel.app/" style={{ marginRight: '10px' }}>
-         <span className='intro'>See Project</span> 
+         <span className='boldsub'><KeyboardArrowRightIcon xs={{fontSize:"small", color:"red"}}/>SEE PROJECT</span> 
+         
         </Link>,
         // <Link underline="hover" key="1" color="inherit" href="/movieprox" >
         //   <span className='intro'>About the Project</span> 
@@ -104,8 +106,7 @@ const Projects = () =>{
                         <Box
                         component="span"
                         sx={{
-                            p: 2,
-                            
+                          p:2,
                             // borderBottom: '1px solid grey',
                             display: 'flex',
                             justifyContent: 'space-between',
@@ -123,10 +124,10 @@ const Projects = () =>{
                         />
                         
                         </Box>
-                        <Box sx={{ borderBottom: '1px solid grey',display: 'flex', justifyContent: 'space-between', alignItems: 'center'  }}>
+                        <Box sx={{ pb:6, borderBottom: '1px solid grey',display: 'flex', justifyContent: 'space-between', alignItems: 'center'  }}>
                             
                             <div className='intro p-4'style={{ textAlign: 'left' }}> 
-                            <img src={tract} className='p-4' style={{ maxWidth: '100%', height: 'auto' }}  alt="" />
+                            <img src={tract} className='p-4 px-0' style={{ maxWidth: '100%', height: 'auto' }}  alt="" />
 
                             {/* <p className='intro'style={{ textAlign: 'left' }}> Developed the official website page of <span className='bold'>TRACT</span></p> */}
                                 <p className="boldsub pt-4">  📝 ABOUT: </p> 
@@ -141,7 +142,7 @@ const Projects = () =>{
                         backend, working closely with the team to optimize performance and functionality; Publish website updates with AWS EC2 and Nginx, ensuring seamless deployment and accessibility for end-users.</p>
                                 {/* <p className='intro'style={{ textAlign: 'left' }}>Publish website updates with AWS EC2 and Nginx, ensuring seamless deployment and accessibility for end-users</p> */}
 
-                            <Breadcrumbs separator=" " aria-label="breadcrumb1" className="d-flex p-4 align-items-center justify-content-center ">
+                            <Breadcrumbs separator=" " aria-label="breadcrumb1" className="d-flex px-0 p-4 ">
                                 {breadcrumbs1}
                             </Breadcrumbs>
                             </div>
@@ -180,7 +181,9 @@ const Projects = () =>{
                                     <Box
                                     component="span"
                                     sx={{
-                                        p: 2,
+                                        pt:10,
+                                        px:2,
+                                        pb: 2,
                                         // borderBottom: '1px solid grey',
                                         display: 'flex',
                                         justifyContent: 'space-between',
@@ -200,9 +203,9 @@ const Projects = () =>{
                                     />
 
                                     </Box>
-                                    <Box sx={{ borderBottom: '1px solid grey',display: 'flex', justifyContent: 'space-between', alignItems: 'center'  }}>
+                                    <Box sx={{ pb:6, borderBottom: '1px solid grey',display: 'flex', justifyContent: 'space-between', alignItems: 'center'  }}>
                                         <div className='intro p-4'style={{ textAlign: 'left' }}> 
-                                        <img src={MovieProx} className='p-4' style={{ maxWidth: '100%', height: 'auto' }} alt="" />
+                                        <img src={MovieProx} className='p-4 px-0' style={{ maxWidth: '100%', height: 'auto' }} alt="" />
                                         <p className="boldsub pt-4">  📝 ABOUT: </p> 
                                         <p className='intro' style={{ textAlign: 'left' }}>MovieProx is a fullstack responsive Nextflix-like website built with MERN (MongoDB, Express, React, Node.js) stack and the
                                     Themoviedb API. Users can sign up, search movies, TVs and people, add movies to favorite list, write reviews.</p>
@@ -214,7 +217,7 @@ const Projects = () =>{
                                     <p className='intro'style={{ textAlign: 'left' }}>Developed server APIs with Express and make API calls to the Themoviedb API by deploying Axios clients; Provided user authentication and protection with JWT and Express Validator; Deployed the application on Vercel and host the database on MongoDB Atlas for cloud storage</p>
                                     {/* <p className='intro'style={{ textAlign: 'left' }}>Provided user authentication and protection with JWT and Express Validator</p> */}
                                     {/* <p className='intro'style={{ textAlign: 'left' }}>Deployed the application on Vercel and host the database on MongoDB Atlas for cloud storage</p> */}
-                                        <Breadcrumbs separator=" " aria-label="breadcrumb2" className="d-flex p-4 align-items-center justify-content-center ">
+                                        <Breadcrumbs separator=" " aria-label="breadcrumb2" className="d-flex px-0 p-4  ">
                                             {breadcrumbs2}
                                         </Breadcrumbs>
                                         </div>
