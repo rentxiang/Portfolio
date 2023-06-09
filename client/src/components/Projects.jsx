@@ -127,7 +127,7 @@ const Projects = () =>{
                         <Box sx={{ pb:6, borderBottom: '1px solid grey',display: 'flex', justifyContent: 'space-between', alignItems: 'center'  }}>
                             
                             <div className='intro p-4'style={{ textAlign: 'left' }}> 
-                            <img src={tract} className='p-4 px-0' style={{ maxWidth: '100%', height: 'auto' }}  alt="" />
+                            <Link href="https://usetract.com"><img src={tract} className='p-4 px-0' style={{ maxWidth: '100%', height: 'auto' }}  alt="" /></Link>
 
                             {/* <p className='intro'style={{ textAlign: 'left' }}> Developed the official website page of <span className='bold'>TRACT</span></p> */}
                                 <p className="boldsub pt-4">  📝 ABOUT: </p> 
@@ -205,7 +205,7 @@ const Projects = () =>{
                                     </Box>
                                     <Box sx={{ pb:6, borderBottom: '1px solid grey',display: 'flex', justifyContent: 'space-between', alignItems: 'center'  }}>
                                         <div className='intro p-4'style={{ textAlign: 'left' }}> 
-                                        <img src={MovieProx} className='p-4 px-0' style={{ maxWidth: '100%', height: 'auto' }} alt="" />
+                                        <Link href='https://movieprox.vercel.app/'><img src={MovieProx} className='p-4 px-0' style={{ maxWidth: '100%', height: 'auto' }} alt="" /></Link>
                                         <p className="boldsub pt-4">  📝 ABOUT: </p> 
                                         <p className='intro' style={{ textAlign: 'left' }}>MovieProx is a fullstack responsive Nextflix-like website built with MERN (MongoDB, Express, React, Node.js) stack and the
                                     Themoviedb API. Users <br/>can sign up, search movies, TVs and people, add movies to favorite list,<br/> write reviews</p>
