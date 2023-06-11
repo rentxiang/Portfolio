@@ -132,13 +132,13 @@ const Projects = () =>{
                             {/* <p className='intro'style={{ textAlign: 'left' }}> Developed the official website page of <span className='bold'>TRACT</span></p> */}
                                 <p className="boldsub pt-4">  📝 ABOUT: </p> 
 
-                                <p className='intro' style={{ textAlign: 'left' }}>Interning at <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link>, I lead a team in frontend development by using <br/>TypeScript and React, developed the official website page of <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link>,  <br/>improving website's UI/UX</p>
+                                <p className='intro' style={{ textAlign: 'left' }}>Interning at <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link>, I lead a team in frontend development by using <br/>TypeScript and Next.js, developed the official website page of <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link>,  <br/>improving website's UI/UX</p>
                                 <p className="boldsub pt-4">  🤖 TECHS: </p> 
                                 
                                 <p className='intro'style={{ textAlign: 'left' }}>Typescript, Next.js, React, AWS services</p>
                                 <p className="boldsub pt-4">  👨‍💻 MY POSITION: </p> 
                                  
-                                <p className='intro'style={{ textAlign: 'left' }}>Contribute to the user Authentication and Authorization APIs development and integration with Next.js in the
+                                <p className='intro'style={{ textAlign: 'left' }}>Contribute to the user Authentication and Authorization APIs development and integration in the
                         backend, working closely with the team to optimize performance and functionality; Publish website updates with AWS EC2 and Nginx, ensuring seamless deployment and accessibility for end-users</p>
                                 {/* <p className='intro'style={{ textAlign: 'left' }}>Publish website updates with AWS EC2 and Nginx, ensuring seamless deployment and accessibility for end-users</p> */}
 
