@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Box, Typography } from "@mui/material";
 import Dylan from "../assets/kid_Dylan.jpeg";
+import PixelDylan from "../assets/kid_Dylan_Pixel2.jpg"
 import React from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -35,8 +36,22 @@ function Home() {
 
   // // </Link>
   // ];
-  const [textProgress, setTextProgress] = useState(0);
 
+
+  const [textProgress, setTextProgress] = useState(0);
+  const [imageSrc, setImageSrc] = useState(Dylan);
+  const [line, setLine] =useState("");
+
+  const handleMouseOver = () => {
+    setLine(":)")
+    setImageSrc(PixelDylan);
+  };
+
+  const handleMouseOut = () => {
+    setLine("")
+
+    setImageSrc(Dylan);
+  };
 
   const loadingTexts = [
     // "👋 Hi, there! I am an aspiring software developer who enjoys discovering new ideas and technologies while diving.",
@@ -66,6 +81,7 @@ function Home() {
   return (
     <section>
     <Container>
+      
       {/* <Row>
           <Breadcrumbs separator="-" aria-label="breadcrumb" className="d-flex p-7 align-items-center justify-content-center ">
             {breadcrumbs}
@@ -118,8 +134,11 @@ function Home() {
           </div>
           <hr/>
         </Col>
+
         <Col lg={2} md={2} className="p-4 pt-0">
-          <img src={Dylan} className="App-logo" alt="logo" />
+        <img src={imageSrc} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="App-logo" alt="logo"  />
+        {/* <p className='intro'>{line}</p> */}
+        
         </Col>
       </Row>
       <Row style={{paddingTop:0, marginTop:0}} id="projects">
