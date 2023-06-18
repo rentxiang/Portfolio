@@ -132,7 +132,6 @@ function Home() {
           
           
           </div>
-          <hr/>
         </Col>
 
         <Col lg={2} md={2} className="p-4 pt-0">
@@ -141,7 +140,15 @@ function Home() {
         
         </Col>
       </Row>
-      <Row style={{paddingTop:0, marginTop:0}} id="projects">
+      <Row className="d-flex p-7 align-items-center justify-content-center">
+        <Col lg={8} md={8}>
+      <hr/>
+
+        </Col>
+        <Col lg={2} md={2}/>
+
+      </Row>
+      <Row style={{paddingTop:100, marginTop:0}} id="projects">
 
         <Projects  id="projects"/>
       </Row>
