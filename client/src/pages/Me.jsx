@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Box, Typography } from "@mui/material";
-import Dylan from "../assets/zoo_Dylan.JPG";
+import Dylan from "../assets/Dylan.jpg";
 import React from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -102,12 +102,12 @@ function Me() {
           <br/>
           
           <p className='intro'style={{ textAlign: 'left' }}>My name is Tianxiang Ren, based in San Francisco bay area.  </p>
-          <p className='intro'style={{ textAlign: 'left' }}>I have proficient technical skills in software and web development and <br />passionate about solving complex business problems. I am looking for a intern position this year or new grad job in 2024. Please feel free to get in touch <br />with me on LinkedIn or via email at: rentxiang@gmail.com.</p>
-          {/* <p className='intro'>Currently I am pursuing my Masters in Information Systems at Northeastern University, interning with <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link> as a software development intern.</p> */}
-          <p className='intro'style={{ textAlign: 'left' }}>I am... still working on this page!🤫</p>
+          <p className='intro'style={{ textAlign: 'left' }}>I have proficient technical skills in software and web development and passionate about solving complex business problems. <br/> </p>
+          {/* <p className='intro' style={{ textAlign: 'left' }}>Inspired by Blade Runner. I am passinate about web development and believe that AI is the next future</p> */}
+          <p className='intro'style={{ textAlign: 'left' }}>I am looking for a intern position this year or new grad job in 2024. Please feel free to get in touch with me on LinkedIn or via email at: rentxiang@gmail.com.</p>
             <div>
             <br/>
-            <div style={{ textAlign: 'left' }}>
+            <div style={{ textAlign: 'left', marginTop:100 }}> 
             
             <Breadcrumbs separator=" " aria-label="breadcrumb" className="d-flex p-7 align-items-left justify-content-left ">
                 {breadcrumbs}

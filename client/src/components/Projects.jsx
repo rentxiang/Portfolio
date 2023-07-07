@@ -20,6 +20,8 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import Astria from '../assets/AstriaTodoAI.png';
 import Joi from '../assets/Joi.webp'
+import Huskyhub from '../assets/Huskyhub.png'
+import neu from '../assets/logo_husky.ico'
 
 const Projects = () => {
   const [textProgress, setTextProgress] = useState(0);
@@ -55,6 +57,8 @@ const Projects = () => {
   const [expanded1, setExpanded1] = useState(false);
   const [expanded2, setExpanded2] = useState(false);
   const [expanded3, setExpanded3] = useState(false);
+  const [expanded4, setExpanded4] = useState(false);
+
 
   const handleToggle1 = () => {
     setExpanded1(!expanded1);
@@ -67,6 +71,10 @@ const Projects = () => {
   
   const handleToggle3 = () => {
     setExpanded3(!expanded3);
+  };
+
+  const handleToggle4 = () => {
+    setExpanded4(!expanded4);
   };
 
   const breadcrumbs1 = [
@@ -93,6 +101,14 @@ const Projects = () => {
   ];
   const breadcrumbs3 = [
     <Link underline="hover" key="1" color="inherit" href="https://github.com/rentxiang/TodoApp/tree/master/client" style={{ marginRight: '10px' }}>
+      <span className='boldsub'><KeyboardArrowRightIcon xs={{ fontSize: "small", color: "red" }} />SEE PROJECT</span>
+
+    </Link>,
+
+  ];
+
+  const breadcrumbs4 = [
+    <Link underline="hover" key="1" color="inherit" href="https://github.com/rentxiang/Huskyhub" style={{ marginRight: '10px' }}>
       <span className='boldsub'><KeyboardArrowRightIcon xs={{ fontSize: "small", color: "red" }} />SEE PROJECT</span>
 
     </Link>,
@@ -143,10 +159,10 @@ const Projects = () => {
                       {/* <p className='intro'style={{ textAlign: 'left' }}> Developed the official website page of <span className='bold'>TRACT</span></p> */}
                       <p className="boldsub pt-4">  📝 ABOUT: </p>
 
-                      <p className='intro' style={{ textAlign: 'left' }}>Interning at <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link>, I lead a team in frontend development by using <br />TypeScript and Next.js, developed the official website page of <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link>,  <br />improving website's UI/UX</p>
+                      <p className='intro' style={{ textAlign: 'left' }}>While interning at <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link>, I mainly served as a frontend developer using skill of TypeScript and React, developed the official website page of <Link underline="hover" key="1" color="inherit" href="https://usetract.com"><span className='bold'>TRACT</span></Link>,  improving website's UI/UX</p>
                       <p className="boldsub pt-4">  🤖 TECHS: </p>
 
-                      <p className='intro' style={{ textAlign: 'left' }}>Typescript, Next.js, React, AWS services</p>
+                      <p className='intro' style={{ textAlign: 'left' }}>Typescript, React, AWS services</p>
                       <p className="boldsub pt-4">  👨‍💻 MY POSITION: </p>
 
                       <p className='intro' style={{ textAlign: 'left' }}>Contribute to the user Authentication and Authorization APIs development and integration in the
@@ -301,7 +317,7 @@ const Projects = () => {
                       <p className='intro' style={{ textAlign: 'left' }}>Javascript, React, Node.js, Express</p>
                       <p className="boldsub pt-4">  👨‍💻 MY POSITION: </p>
 
-                      <p className='intro' style={{ textAlign: 'left' }}>Developed the user interfaces and server APIs with Express</p>
+                      <p className='intro' style={{ textAlign: 'left' }}>Developed the todos CRUD functionalities, user interfaces and server APIs with Javacripte and Express</p>
                      
                       <Breadcrumbs separator=" " aria-label="breadcrumb2" className="d-flex px-0 p-4  ">
                         {breadcrumbs3}
@@ -333,7 +349,87 @@ const Projects = () => {
               )}
 
             </Row>
+            
+
+            {/* project 4 */}
+            <Row style={{ marginTop: 20 }}>
+
+              {expanded4 ? (
+                <div className='p-0'>
+                  <Box
+                    component="span"
+                    sx={{
+                      pt: 10,
+                      px: 2,
+                      pb: 2,
+                      // borderBottom: '1px solid grey',
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                      alignItems: 'center',
+                      cursor: 'pointer'
+                    }}
+                    onClick={handleToggle4}
+                  >
+                    <h4 className='name' style={{ textAlign: 'left' }}>HUSKYHUB</h4>
+
+
+
+                    <ArrowIcon
+                      className={`rotateIcon ${expanded4 ? 'down' : 'up'}`}
+                      style={{ marginLeft: '10px' }}
+                    />
+
+                  </Box>
+                  <Box sx={{ pb: 6, borderBottom: '1px solid grey', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <div className='intro p-4' style={{ textAlign: 'left' }}>
+                      <div className="text-center">
+                      <Link href='https://siliconvalley.northeastern.edu/'><img src={neu} className='p-4 px-0' style={{ maxWidth: '20%', height: 'auto'}} alt="" />Northeastern Univerity in Silicon Valley</Link>
+
+                      </div>
+
+                    <Link href='https://github.com/rentxiang/Huskyhub'><img src={Huskyhub} className='p-4 px-0' style={{ maxWidth: '100%', height: 'auto' }} alt="" /></Link>
+
+                      <p className="boldsub pt-4">  📝 ABOUT: </p>
+                      <p className='intro' style={{ textAlign: 'left' }}>Huskyhub is an original pioneer program designed by the Silicon Valley Hackers Club to support student life and foster a community for students at Northeastern University to join and engage in discussions.</p> 
+                      <p className="boldsub pt-4">  🤖 TECHS: </p>
+
+                      <p className='intro' style={{ textAlign: 'left' }}>Python, Django, HTML, CSS</p>
+                      <p className="boldsub pt-4">  👨‍💻 MY POSITION: </p>
+
+                      <p className='intro' style={{ textAlign: 'left' }}>Finished and developed the frontend with HTML and backend with Django framework </p>
+                     
+                      <Breadcrumbs separator=" " aria-label="breadcrumb4" className="d-flex px-0 p-4  ">
+                        {breadcrumbs4}
+                      </Breadcrumbs>
+                    </div>
+
+                  </Box>
+                </div>
+              ) : (
+                <Box
+                  component="span"
+                  sx={{
+                    p: 2,
+                    py: 0,
+                    borderBottom: '1px solid grey',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    cursor: 'pointer'
+                  }}
+                  onClick={handleToggle4}
+                >
+                  <h4 className='name my-0' style={{ textAlign: 'left ' }}>HUSKYHUB</h4>
+                  <ArrowIcon
+                    className={`rotateIcon ${expanded4 ? 'down' : 'up'}`}
+                    style={{ marginLeft: '10px' }}
+                  />
+                </Box>
+              )}
+
+            </Row>
           </Col>
+          
           {/* Whole Body Border*/}
 
           <Col lg={2} md={6}></Col>
