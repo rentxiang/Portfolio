@@ -102,9 +102,9 @@ function Me() {
           <br/>
           
           <p className='intro'style={{ textAlign: 'left' }}>My name is Tianxiang Ren, based in San Francisco bay area.  </p>
-          <p className='intro'style={{ textAlign: 'left' }}>I have proficient technical skills in software and web development and passion about solving complex business problems. <br/> </p>
+          <p className='intro'style={{ textAlign: 'left' }}>I have proficient technical skills in software and web development and passion about web and AI🤖️! <br/> </p>
           {/* <p className='intro' style={{ textAlign: 'left' }}>Inspired by Blade Runner. I am passinate about web development and believe that AI is the next future</p> */}
-          <p className='intro'style={{ textAlign: 'left' }}>I am looking for a intern position this year or new grad job in 2024. Please feel free to get in touch with me on LinkedIn or via email at: rentxiang@gmail.com.</p>
+          <p className='intro'style={{ textAlign: 'left' }}>I am looking for an intern position this year or new grad job in 2024. Please feel free to get in touch with me on LinkedIn or via email at: rentxiang@gmail.com.</p>
             <div>
             <br/>
             <div style={{ textAlign: 'left', marginTop:100 }}> 
