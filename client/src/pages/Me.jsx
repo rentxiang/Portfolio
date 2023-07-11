@@ -183,7 +183,7 @@ function Me() {
               "Hui hui" means "grey grey" in Mandarin, his name is derived from Xiao Huihui in the Chinese animated series "Pleasant Goat and Big Big Wolf."
               </p> 
               <p className="intro" style={{ textAlign: "left" }}>
-              Huihui accompanied me throughout my school years. It's been 2 years I haven't back home and I miss him.
+              Huihui accompanied me throughout my school years. It's been 2 years I haven't been back home and I miss him.
               </p>
             </Col>
             
