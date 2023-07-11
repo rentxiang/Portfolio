@@ -92,7 +92,7 @@ function Me() {
           </Breadcrumbs>
       </Row> */}
       <Navbar/>
-      <Row  style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
+      <Row className="d-flex p-7 align-items-center justify-content-center"  style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
         <Col lg={8} md={8} className="p-4">
         {/* <h1 className='name'style={{ textAlign: 'left' }} ><ArrowForwardIosIcon xs={{fontSize:"large", color:"red"}}/> About me</h1> */}
         {loadingTexts.map((text, index) => (
@@ -124,7 +124,7 @@ function Me() {
       <div >
       <Row style={{paddingTop:0}} id="projects">
       <hr />
-
+          
       </Row>
       </div>
       
@@ -138,3 +138,5 @@ function Me() {
 }
 
 export default Me;
+
+
