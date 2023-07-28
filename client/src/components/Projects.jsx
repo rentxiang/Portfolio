@@ -314,7 +314,7 @@ const Projects = () => {
                       <p className='intro' style={{ textAlign: 'left' }}>Joi is Todo AI assistant solution built with react and OpenAI API for <Link underline="hover" key="1" color="inherit" href="https://astriaai.com/"><span className='bold'>Astria</span></Link>. Users can effortlessly plan their tasks or seek instructions and steps from the AI for their todos.</p> 
                       <p className="boldsub pt-4">  🤖 TECHS: </p>
 
-                      <p className='intro' style={{ textAlign: 'left' }}>Javascript, React, Node.js, Express</p>
+                      <p className='intro' style={{ textAlign: 'left' }}>Javascript, React, Node.js, Express, Axios, Redux</p>
                       <p className="boldsub pt-4">  👨‍💻 MY POSITION: </p>
 
                       <p className='intro' style={{ textAlign: 'left' }}>Developed the todos CRUD functionalities, user interfaces and server APIs with Javacripte and Express</p>
