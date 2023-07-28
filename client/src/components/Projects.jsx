@@ -238,7 +238,7 @@ const Projects = () => {
                         Themoviedb API. Users <br />can sign up, search movies, TVs and people, add movies to favorite list,<br /> write reviews</p>
                       <p className="boldsub pt-4">  🤖 TECHS: </p>
 
-                      <p className='intro' style={{ textAlign: 'left' }}>Javascript, React, Node.js, Mongoose</p>
+                      <p className='intro' style={{ textAlign: 'left' }}>Javascript, React, Node.js, Mongoose, Axios, Redux</p>
                       <p className="boldsub pt-4">  👨‍💻 MY POSITION: </p>
 
                       <p className='intro' style={{ textAlign: 'left' }}>Developed the frontend with Material UI and react, server APIs with Express and make API calls to the Themoviedb API <br />by deploying Axios clients; Provided user authentication and protection with JWT and Express Validator; Deployed the application on Vercel and host the database on MongoDB Atlas for cloud storage</p>
@@ -314,7 +314,7 @@ const Projects = () => {
                       <p className='intro' style={{ textAlign: 'left' }}>Joi is Todo AI assistant solution built with react and OpenAI API for <Link underline="hover" key="1" color="inherit" href="https://astriaai.com/"><span className='bold'>Astria</span></Link>. Users can effortlessly plan their tasks or seek instructions and steps from the AI for their todos.</p> 
                       <p className="boldsub pt-4">  🤖 TECHS: </p>
 
-                      <p className='intro' style={{ textAlign: 'left' }}>Javascript, React, Node.js, Express, Axios, Redux</p>
+                      <p className='intro' style={{ textAlign: 'left' }}>Javascript, React, Node.js, Express</p>
                       <p className="boldsub pt-4">  👨‍💻 MY POSITION: </p>
 
                       <p className='intro' style={{ textAlign: 'left' }}>Developed the todos CRUD functionalities, user interfaces and server APIs with Javacripte and Express</p>
