@@ -101,7 +101,7 @@ function Home() {
           <div>
           <p className='intro' style={{ textAlign: 'left' }}>👋 Hi, there! I am an aspiring software developer who enjoys discovering new <br />ideas and technologies while diving.  </p>
           <p className='intro' style={{ textAlign: 'left' }}>Currently I am pursuing my Masters in Information Systems at Northeastern University.</p>
-          <p className='intro' style={{ textAlign: 'left' }}>I am a full-stack developer specializing in MERN stack Front-end and Back-end jobs. I am looking for a intern position this year or new grad job in 2024. Please feel free to get in touch with me on  
+          <p className='intro' style={{ textAlign: 'left' }}>I am a full-stack developer specializing in MERN stack Front-end and Back-end jobs. I am looking for an intern position this year or new grad job in 2024. Please feel free to get in touch with me on  
           <Link underline="none" key="2" color="inherit" href="https://www.linkedin.com/in/rentxiang/"> LinkedIn</Link> or via <Link underline="none" key="3" color="inherit" href="mailto:rentxiang@gmail.com">email</Link>.</p>
           </div>
           {/* <div>

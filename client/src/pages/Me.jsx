@@ -197,7 +197,7 @@ function Me() {
               minHeight: "50vh",
             }}
           >
-            <Col lg={8} md={8} className="p-4">
+            <Col lg={7} md={7} className="p-4">
               <p className="intro" style={{ textAlign: "left" }}>
               The bubble, paopao is my lovely princess and she's beautiful. I adopted paopao from one of my friend since June.
               </p>
@@ -205,7 +205,7 @@ function Me() {
               She is very shy and timid, yet incredibly affectionate and clingy. She is becoming my sweetheart!
               </p>
             </Col>
-            <Col lg={2} md={2} className="p-4">
+            <Col lg={5} md={5} className="p-4">
               <img src={paopao} style={{ width: 300 }} alt="logo" />
             </Col>
             <hr />
