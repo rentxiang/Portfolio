@@ -18,6 +18,7 @@ import Stack from '@mui/material/Stack';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Navbar from '../components/Navbar';
 import  { useState, useEffect } from 'react';
+import Fade from "@mui/material/Fade";
 
 
 
@@ -97,6 +98,7 @@ function Home() {
             ))}
           {/* <a href='/me'><h1 className='name py-4'  style={{ textAlign: 'left' }}><ArrowForwardIosIcon xs={{fontSize:"large", color:"red"}}/> Tianxiang Ren</h1></a> */}
           <br/>
+          <Fade in={true} timeout={3000}>
 
           <div>
           <p className='intro' style={{ textAlign: 'left' }}>👋 Hi, there! I am an aspiring software developer who enjoys discovering new <br />ideas and technologies while diving.  </p>
@@ -104,6 +106,7 @@ function Home() {
           <p className='intro' style={{ textAlign: 'left' }}>I am a full-stack developer specializing in MERN stack Front-end and Back-end jobs. I am looking for an intern position this year or new grad job in 2024. Please feel free to get in touch with me on  
           <Link underline="none" key="2" color="inherit" href="https://www.linkedin.com/in/rentxiang/"> LinkedIn</Link> or via <Link underline="none" key="3" color="inherit" href="mailto:rentxiang@gmail.com">email</Link>.</p>
           </div>
+          </Fade>
           {/* <div>
             {loadingTexts.map((text, index) => (
               <p key={index} className='intro' style={{ textAlign: 'left' }}>
@@ -135,17 +138,19 @@ function Home() {
         </Col>
 
         <Col lg={2} md={2} className="p-4 pt-0">
+        <Fade in={true} timeout={3000}>
+
         <img src={imageSrc} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="App-logo" alt="logo"  />
         {/* <p className='intro'>{line}</p> */}
-        
+        </Fade>
         </Col>
       </Row>
-      <Row className="d-flex p-7 align-items-center justify-content-center">
+      <Row className="d-flex p-7 align-items-center justify-content-center" style={{paddingTop:100, marginTop:0}}>
         <Col lg={8} md={8}>
       <hr/>
 
         </Col>
-        <Col lg={2} md={2}/>
+        <Col lg={2} md={2}  />
 
       </Row>
       <Row style={{paddingTop:100, marginTop:0}} id="projects">

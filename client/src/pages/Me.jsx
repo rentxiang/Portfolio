@@ -21,7 +21,7 @@ import { Skeleton } from "@mui/material";
 import { useState, useEffect } from "react";
 import huihui from "../assets/huihui.png";
 import paopao from "../assets/paopao.jpg";
-
+import Fade from "@mui/material/Fade";
 
 function Me() {
   const breadcrumbs = [
@@ -49,18 +49,10 @@ function Me() {
       </a>
     </div>,
 
-    // <Link underline="hover" key="1" color="inherit" href="/home">
-    //   <span className='intro'>Home</span>
 
-    // </Link>,
-    //   <Link underline="hover" key="1" color="inherit" href="/about">
-    //      <span className='intro'>About</span>
-
-    // </Link>
   ];
 
   const [textProgress, setTextProgress] = useState(0);
-
   const loadingTexts = [
     // "👋 Hi, there! I am an aspiring software developer who enjoys discovering new ideas and technologies while diving.",
     // "Currently I am pursuing my Masters in Information Systems at Northeastern University, interning at TRACT as a software development intern.",
@@ -90,11 +82,6 @@ function Me() {
   return (
     <section>
       <Container>
-        {/* <Row>
-          <Breadcrumbs separator="-" aria-label="breadcrumb" className="d-flex p-7 align-items-center justify-content-center ">
-            {breadcrumbs}
-          </Breadcrumbs>
-      </Row> */}
         <Navbar />
         <Row
           className="d-flex p-7 align-items-center justify-content-center"
@@ -114,7 +101,8 @@ function Me() {
               </h1>
             ))}
             <br />
-
+            <Fade in={true} timeout={1000}>
+              <div>
             <p className="intro" style={{ textAlign: "left" }}>
               My name is Tianxiang Ren, based in San Francisco bay area.{" "}
             </p>
@@ -128,6 +116,8 @@ function Me() {
               2024. Please feel free to get in touch with me on LinkedIn or via
               email at: rentxiang@gmail.com.
             </p>
+            </div>
+            </Fade>
             <div>
               <br />
               <div style={{ textAlign: "left", marginTop: 100 }}>
@@ -145,6 +135,8 @@ function Me() {
             <img src={Dylan} style={{ width: 300 }} alt="logo" />
           </Col>
         </Row>
+        <Fade in={true} timeout={4000}>
+
         <div>
           <Row
             className="d-flex align-items-center justify-content-center"
@@ -156,6 +148,8 @@ function Me() {
             }}
           >
             <hr />
+        
+            
             <Col lg={9} md={9} className="p-4">
               <p className="intro" style={{ textAlign: "left" }}>
                 I enjoy traveling and gaining diverse perspectives from
@@ -164,6 +158,7 @@ function Me() {
                 Siamese cat 🐱, and I absolutely adore them.
               </p>
             </Col>
+            
           </Row>
           
           <Row
@@ -208,12 +203,16 @@ function Me() {
             <Col lg={5} md={5} className="p-4">
               <img src={paopao} style={{ width: 300 }} alt="logo" />
             </Col>
+
             <hr />
 
           </Row>
+
         </div>
+        </Fade>
 
         <Footer />
+        
       </Container>
     </section>
   );
