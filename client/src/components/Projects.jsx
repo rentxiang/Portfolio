@@ -26,6 +26,7 @@ import Astria from "../assets/AstriaTodoAI.png";
 import Joi from "../assets/Joi.webp";
 import Huskyhub from "../assets/Huskyhub.png";
 import neu from "../assets/logo_husky.ico";
+import CodeSharpIcon from '@mui/icons-material/CodeSharp';
 
 const Projects = () => {
   const [textProgress, setTextProgress] = useState(0);
@@ -156,7 +157,7 @@ const Projects = () => {
           <Col lg={8} md={6}>
             {loadingTexts.map((text, index) => (
               <h1 className="name py-0" style={{ textAlign: "left" }}>
-                <ArrowForwardIosIcon xs={{ fontSize: "large" }} />{" "}
+                <CodeSharpIcon xs={{ fontSize: "large" }} />{" "}
                 {text.substring(0, textProgress)}
               </h1>
             ))}

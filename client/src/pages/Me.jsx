@@ -22,6 +22,7 @@ import { useState, useEffect } from "react";
 import huihui from "../assets/huihui.png";
 import paopao from "../assets/paopao.jpg";
 import Fade from "@mui/material/Fade";
+import SubdirectoryArrowRightSharpIcon from '@mui/icons-material/SubdirectoryArrowRightSharp';
 
 function Me() {
   const breadcrumbs = [
@@ -33,7 +34,7 @@ function Me() {
       download="Resume_Tianxiang_Ren.pdf"
     >
       <span className="intro">
-        <NavigateNextIcon /> Get My Resume
+        <SubdirectoryArrowRightSharpIcon /> Get My Resume
       </span>
     </Link>,
     <div>
@@ -90,7 +91,7 @@ function Me() {
             minHeight: "100vh",
           }}
         >
-          <Col lg={8} md={8} className="p-4">
+          <Col lg={7} md={8} className="p-4">
             {loadingTexts.map((text, index) => (
               <h1 className="name py-4" style={{ textAlign: "left" }}>
                 <ArrowForwardIosIcon xs={{ fontSize: "large", color: "red" }} />{" "}
@@ -120,8 +121,11 @@ function Me() {
               </div>
             </Fade>
 
+            <Fade in={true} timeout={12000}>
+
             <div>
               <br />
+
               <div style={{ textAlign: "left", marginTop: 100 }}>
                 <Breadcrumbs
                   separator=" "
@@ -132,17 +136,18 @@ function Me() {
                 </Breadcrumbs>
               </div>
             </div>
+            </Fade>
           </Col>
-          <Col lg={2} md={2} className="p-4">
-            <img src={Dylan} style={{ width: 300 }} alt="logo" />
+          <Col lg={3} md={2} className="p-4">
+            <img src={Dylan} style={{ width: '100%' }} alt="logo" />
           </Col>
         </Row>
-        <Fade in={true} timeout={4000}>
+        <Fade in={true} timeout={15000}>
           <div>
             <Row
               className="d-flex align-items-center justify-content-center"
               style={{
-                display: "flex",
+                // display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
                 minHeight: "50vh",
@@ -150,7 +155,8 @@ function Me() {
             >
               <hr />
 
-              <Col lg={9} md={9} className="p-4">
+              <Col lg={10} md={10} className="p-4" >
+                <h1 className="name py-5" style={{ textAlign: "left" }}>LIFE</h1>
                 <p className="intro" style={{ textAlign: "left" }}>
                   I enjoy traveling and gaining diverse perspectives from
                   different people. On top of that, I am a pet enthusiast - I
@@ -170,9 +176,9 @@ function Me() {
               }}
             >
               <Col lg={5} md={5} className="p-4">
-                <img src={huihui} style={{ maxWidth: "60%" }} alt="logo" />
+                <img src={huihui} style={{ width: "60%" }} alt="logo" />
               </Col>
-              <Col lg={7} md={7} className="p-4">
+              <Col lg={5} md={5} className="p-4">
                 <p className="intro" style={{ textAlign: "left" }}>
                   "Hui hui" means "grey grey" in Mandarin, his name is derived
                   from Xiao Huihui in the Chinese animated series "Pleasant Goat
@@ -193,7 +199,7 @@ function Me() {
                 minHeight: "50vh",
               }}
             >
-              <Col lg={7} md={7} className="p-4">
+              <Col lg={5} md={5} className="p-4">
                 <p className="intro" style={{ textAlign: "left" }}>
                   The bubble, paopao is my lovely princess and she's beautiful.
                   I adopted paopao from one of my friend since June.
