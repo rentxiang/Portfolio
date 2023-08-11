@@ -137,7 +137,7 @@ function Home() {
           </div>
         </Col>
 
-        <Col lg={2} md={2} className="p-4 pt-0">
+        <Col lg={2} md={2} xs={10} className="p-4 pt-0">
         <Fade in={true} timeout={3000}>
 
         <img src={imageSrc} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="App-logo" alt="logo"  />

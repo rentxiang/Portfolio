@@ -48,8 +48,6 @@ function Me() {
         <EmailIcon color="" fontSize="large" />
       </a>
     </div>,
-
-
   ];
 
   const [textProgress, setTextProgress] = useState(0);
@@ -57,7 +55,7 @@ function Me() {
     // "👋 Hi, there! I am an aspiring software developer who enjoys discovering new ideas and technologies while diving.",
     // "Currently I am pursuing my Masters in Information Systems at Northeastern University, interning at TRACT as a software development intern.",
     // "I am a full-stack developer specializing in MERN stack Front-end and Back-end jobs. I am looking for an intern position this year or a new grad job in 2024. Please feel free to get in touch with me on LinkedIn or via email."
-    "ABOUT ME",
+    "ALL ABOUT ME",
   ];
 
   useEffect(() => {
@@ -93,7 +91,6 @@ function Me() {
           }}
         >
           <Col lg={8} md={8} className="p-4">
-            {/* <h1 className='name'style={{ textAlign: 'left' }} ><ArrowForwardIosIcon xs={{fontSize:"large", color:"red"}}/> About me</h1> */}
             {loadingTexts.map((text, index) => (
               <h1 className="name py-4" style={{ textAlign: "left" }}>
                 <ArrowForwardIosIcon xs={{ fontSize: "large", color: "red" }} />{" "}
@@ -101,23 +98,28 @@ function Me() {
               </h1>
             ))}
             <br />
-            <Fade in={true} timeout={1000}>
+            <Fade in={true} timeout={3000}>
               <div>
-            <p className="intro" style={{ textAlign: "left" }}>
-              My name is Tianxiang Ren, based in San Francisco bay area.{" "}
-            </p>
-            <p className="intro" style={{ textAlign: "left" }}>
-              I'm a web and AI enthusiast, fueling my passion with endless
-              possibilities! <br />{" "}
-            </p>
-            {/* <p className='intro' style={{ textAlign: 'left' }}>Inspired by Blade Runner. I am passinate about web development and believe that AI is the next future</p> */}
-            <p className="intro" style={{ textAlign: "left" }}>
-              I am looking for an intern position this year or new grad job in
-              2024. Please feel free to get in touch with me on LinkedIn or via
-              email at: rentxiang@gmail.com.
-            </p>
-            </div>
+                <p className="intro" style={{ textAlign: "left" }}>
+                  "Sincere, Courageous, Resolute" <br /> -- I love what I do,
+                  and this is a truthful statement.
+                </p>
+              </div>
             </Fade>
+            <Fade in={true} timeout={9000}>
+              <div>
+                <p className="intro" style={{ textAlign: "left" }}>
+                  My name is Tianxiang Ren, based in San Francisco bay area.{" "}
+                </p>
+                {/* <p className='intro' style={{ textAlign: 'left' }}>Inspired by Blade Runner. I am passinate about web development and believe that AI is the next future</p> */}
+                <p className="intro" style={{ textAlign: "left" }}>
+                  I am looking for an intern position this year or new grad job
+                  in 2024. Please feel free to get in touch with me on LinkedIn
+                  or via email at: rentxiang@gmail.com.
+                </p>
+              </div>
+            </Fade>
+
             <div>
               <br />
               <div style={{ textAlign: "left", marginTop: 100 }}>
@@ -136,83 +138,81 @@ function Me() {
           </Col>
         </Row>
         <Fade in={true} timeout={4000}>
+          <div>
+            <Row
+              className="d-flex align-items-center justify-content-center"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                minHeight: "50vh",
+              }}
+            >
+              <hr />
 
-        <div>
-          <Row
-            className="d-flex align-items-center justify-content-center"
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              minHeight: "50vh",
-            }}
-          >
-            <hr />
-        
-            
-            <Col lg={9} md={9} className="p-4">
-              <p className="intro" style={{ textAlign: "left" }}>
-                I enjoy traveling and gaining diverse perspectives from
-                different people. On top of that, I am a pet enthusiast - I have
-                a delightful Pug dog 🐶 and an adorable mix of a Calico and
-                Siamese cat 🐱, and I absolutely adore them.
-              </p>
-            </Col>
-            
-          </Row>
-          
-          <Row
-            className="d-flex align-items-center justify-content-center"
-            style={{
-              // display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              minHeight: "50vh",
-            }}
-          >
-            <Col lg={5} md={5} className="p-4">
-              <img src={huihui} style={{ maxWidth: "60%" }} alt="logo" />
-            </Col>
-            <Col lg={7} md={7} className="p-4">
-              <p className="intro" style={{ textAlign: "left" }}>
-              "Hui hui" means "grey grey" in Mandarin, his name is derived from Xiao Huihui in the Chinese animated series "Pleasant Goat and Big Big Wolf."
-              </p> 
-              <p className="intro" style={{ textAlign: "left" }}>
-              Huihui accompanied me throughout my school years. It's been 2 years I haven't been back home and I miss him.
-              </p>
-            </Col>
-            
-          </Row>
-          <Row
-            className="d-flex align-items-center justify-content-center"
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              minHeight: "50vh",
-            }}
-          >
-            <Col lg={7} md={7} className="p-4">
-              <p className="intro" style={{ textAlign: "left" }}>
-              The bubble, paopao is my lovely princess and she's beautiful. I adopted paopao from one of my friend since June.
-              </p>
-              <p className="intro" style={{ textAlign: "left" }}>
-              She is very shy and timid, yet incredibly affectionate and clingy. She is becoming my sweetheart!
-              </p>
-            </Col>
-            <Col lg={5} md={5} className="p-4">
-              <img src={paopao} style={{ width: 300 }} alt="logo" />
-            </Col>
+              <Col lg={9} md={9} className="p-4">
+                <p className="intro" style={{ textAlign: "left" }}>
+                  I enjoy traveling and gaining diverse perspectives from
+                  different people. On top of that, I am a pet enthusiast - I
+                  have a delightful Pug dog 🐶 and an adorable mix of a Calico
+                  and Siamese cat 🐱, and I absolutely adore them.
+                </p>
+              </Col>
+            </Row>
 
-            <hr />
+            <Row
+              className="d-flex align-items-center justify-content-center"
+              style={{
+                // display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                minHeight: "50vh",
+              }}
+            >
+              <Col lg={5} md={5} className="p-4">
+                <img src={huihui} style={{ maxWidth: "60%" }} alt="logo" />
+              </Col>
+              <Col lg={7} md={7} className="p-4">
+                <p className="intro" style={{ textAlign: "left" }}>
+                  "Hui hui" means "grey grey" in Mandarin, his name is derived
+                  from Xiao Huihui in the Chinese animated series "Pleasant Goat
+                  and Big Big Wolf."
+                </p>
+                <p className="intro" style={{ textAlign: "left" }}>
+                  Huihui accompanied me throughout my school years. It's been 2
+                  years I haven't been back home and I miss him.
+                </p>
+              </Col>
+            </Row>
+            <Row
+              className="d-flex align-items-center justify-content-center"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                minHeight: "50vh",
+              }}
+            >
+              <Col lg={7} md={7} className="p-4">
+                <p className="intro" style={{ textAlign: "left" }}>
+                  The bubble, paopao is my lovely princess and she's beautiful.
+                  I adopted paopao from one of my friend since June.
+                </p>
+                <p className="intro" style={{ textAlign: "left" }}>
+                  She is very shy and timid, yet incredibly affectionate and
+                  clingy. She is becoming my sweetheart!
+                </p>
+              </Col>
+              <Col lg={5} md={5} className="p-4">
+                <img src={paopao} style={{ width: 300 }} alt="logo" />
+              </Col>
 
-          </Row>
-
-        </div>
+              <hr />
+            </Row>
+          </div>
         </Fade>
 
         <Footer />
-        
       </Container>
     </section>
   );
