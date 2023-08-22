@@ -26,7 +26,7 @@ import SubdirectoryArrowRightSharpIcon from '@mui/icons-material/SubdirectoryArr
 
 function Me() {
   const breadcrumbs = [
-    <Link
+      <Link
       underline="hover"
       key="1"
       color="inherit"
@@ -37,7 +37,7 @@ function Me() {
         <SubdirectoryArrowRightSharpIcon /> Get My Resume
       </span>
     </Link>,
-    <div>
+      <div style={{paddingLeft:"150px"}}> 
       <a href="https://www.linkedin.com/in/rentxiang/" className="p-3">
         <LinkedInIcon color="" fontSize="large" />
       </a>
@@ -48,7 +48,8 @@ function Me() {
       <a href="mailto:rentxiang@gmail.com" className="p-3">
         <EmailIcon color="" fontSize="large" />
       </a>
-    </div>,
+      </div>
+
   ];
 
   const [textProgress, setTextProgress] = useState(0);
@@ -56,7 +57,7 @@ function Me() {
     // "👋 Hi, there! I am an aspiring software developer who enjoys discovering new ideas and technologies while diving.",
     // "Currently I am pursuing my Masters in Information Systems at Northeastern University, interning at TRACT as a software development intern.",
     // "I am a full-stack developer specializing in MERN stack Front-end and Back-end jobs. I am looking for an intern position this year or a new grad job in 2024. Please feel free to get in touch with me on LinkedIn or via email."
-    "ALL ABOUT ME",
+    "ABOUT ME",
   ];
 
   useEffect(() => {
