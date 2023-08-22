@@ -161,7 +161,6 @@ const Projects = () => {
                 {text.substring(0, textProgress)}
               </h1>
             ))}
-            {/* Project 1 */}
               <div style={{marginTop: 100}}>
               {projectsData.map((project, index) => (
             <ProjectItem
