@@ -9,7 +9,7 @@ import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 
-const ProjectItem = ({ title, images, about, techs, position, breadcrumbs }) => {
+const ProjectItem = ({ title, images,imageLink, about, techs, position, breadcrumbs }) => {
   const [expanded, setExpanded] = useState(false);
 
   const handleToggle = () => {
@@ -43,7 +43,7 @@ const ProjectItem = ({ title, images, about, techs, position, breadcrumbs }) => 
             <div className="intro p-4" style={{ textAlign: 'left' }}>
               {/* Use map function to render multiple images */}
               {images.map((image, index) => (
-                <Link key={index} href="https://usetract.com">
+                <Link key={index} href={imageLink}>
                   <img src={image} className="p-4 px-0" style={{ maxWidth: '100%', height: 'auto' }} alt="" />
                 </Link>
               ))}

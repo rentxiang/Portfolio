@@ -50,6 +50,7 @@ const Projects = () => {
     {
       title: 'TRACT',
       images: [tract],
+      imageLink:'https://usetract.com',
       about: "While interning at TRACT, I mainly served as a frontend developer using skill of TypeScript and React, developed the official website page of TRACT, improving website's UI/UX",
       techs: 'Typescript, React, AWS services',
       position: 'Leveraged React components, managed state using Redux, and utilized Axios for API calls. Employed CSS modules for styling to ensure modularity and avoid conflicts. Contributed to the user Authentication and Authorization APIs development and integration in the backend, working closely with the team to optimize performance and functionality; Published website updates with AWS EC2 and Nginx, ensuring seamless deployment and accessibility for end-users',
@@ -71,6 +72,7 @@ const Projects = () => {
     {
       title: 'MOVIEPROX',
       images: [MovieProx],
+      imageLink:'https://movieprox.vercel.app/',
       about: 'MovieProx is a fullstack responsive Nextflix-like website built with MERN (MongoDB, Express, React, Node.js) stack and the Themoviedb API. Users can sign up, search movies, TVs and people, add movies to favorite list, write reviews',
       techs: 'Javascript, React, Node.js, Mongoose, Axios, Redux',
       position: 'Developed the frontend with Material UI and react, server APIs with Express and make API calls to the Themoviedb API by deploying Axios clients; Provided user authentication and protection with JWT and Express Validator; Deployed the application on Vercel and host the database on MongoDB Atlas for cloud storage',
@@ -92,6 +94,7 @@ const Projects = () => {
     {
       title: 'JOI',
       images: [Joi,Astria],
+      imageLink: 'https://github.com/rentxiang/TodoApp/tree/master/client',
       about: 'Joi is Todo AI assistant solution built with react and OpenAI API for Astria. Users can effortlessly plan their tasks or seek instructions and steps from the AI for their todos.',
       techs: 'Javascript, React, Node.js, Express',
       position: 'Developed the todos CRUD functionalities, user interfaces and server APIs with Javacripte and Express',
@@ -113,6 +116,7 @@ const Projects = () => {
     {
       title: 'HUSKYHUB',
       images: [Huskyhub],
+      imageLink:'https://github.com/rentxiang/Huskyhub',
       about: 'Huskyhub is an original pioneer program designed by the Silicon Valley Hackers Club to support student life and foster a community for students at Northeastern University to join and engage in discussions.',
       techs: 'Python, Django, HTML, CSS',
       position: 'Finished and developed the frontend with HTML and backend with Django framework',
@@ -134,6 +138,7 @@ const Projects = () => {
     {
       title: 'MUGGLE AI',
       images: [Muggle],
+      imageLink:'',
       about: 'Muggle ai is a LLM ai application under construction now!',
       techs: 'Python, Typescript, React',
       position: 'Full stack Software Developer',
@@ -171,6 +176,7 @@ const Projects = () => {
               key={index}
               title={project.title}
               images={project.images}
+              imageLink={project.imageLink}
               about={project.about}
               techs={project.techs}
               position={project.position}
