@@ -135,28 +135,6 @@ const Projects = () => {
       </Link>,
       ],
     },
-    {
-      title: 'MUGGLE AI',
-      images: [Muggle],
-      imageLink:'',
-      about: 'Muggle ai is a LLM ai application under construction now!',
-      techs: 'Python, Typescript, React',
-      position: 'Full stack Software Developer',
-      breadcrumbs: [
-        <Link
-        underline="hover"
-        key="1"
-        color="inherit"
-        href="https://github.com/rentxiang/Huskyhub"
-        style={{ marginRight: "10px" }}
-      >
-        <span className="boldsub">
-          <KeyboardArrowRightIcon xs={{ fontSize: "small", color: "red" }} />
-          SEE PROJECT
-        </span>
-      </Link>,
-      ],
-    },
   ];
 
   return (

@@ -108,7 +108,7 @@ function Me() {
                 </p>
               </div>
             </Fade>
-            <Fade in={true} timeout={9000}>
+            <Fade in={true} timeout={5000}>
               <div>
                 <p className="intro" style={{ textAlign: "left" }}>
                   My name is Tianxiang Ren, based in San Francisco bay area.{" "}
@@ -122,7 +122,7 @@ function Me() {
               </div>
             </Fade>
 
-            <Fade in={true} timeout={12000}>
+            <Fade in={true} timeout={7000}>
 
             <div>
               <br />
@@ -143,7 +143,7 @@ function Me() {
             <img src={Dylan} style={{ width: '100%' }} alt="logo" />
           </Col>
         </Row>
-        <Fade in={true} timeout={15000}>
+        <Fade in={true} timeout={8000}>
           <div>
             <Row
               className="d-flex align-items-center justify-content-center"
