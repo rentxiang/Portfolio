@@ -23,6 +23,7 @@ import huihui from "../assets/huihui.png";
 import paopao from "../assets/paopao.jpg";
 import Fade from "@mui/material/Fade";
 import SubdirectoryArrowRightSharpIcon from '@mui/icons-material/SubdirectoryArrowRightSharp';
+import TechStack from "../components/TechStack";
 
 function Me() {
   const breadcrumbs = [
@@ -31,7 +32,7 @@ function Me() {
       key="1"
       color="inherit"
       href="Resume_Tianxiang_Ren.pdf"
-      download="Resume_Tianxiang_Ren.pdf"
+      target="_blank"
     >
       <span className="intro">
         <SubdirectoryArrowRightSharpIcon /> Get My Resume
@@ -156,6 +157,7 @@ function Me() {
             >
               <hr />
 
+
               <Col lg={10} md={10} className="p-4" >
                 <h1 className="name py-5" style={{ textAlign: "left" }}>LIFE</h1>
                 <p className="intro" style={{ textAlign: "left" }}>
@@ -218,7 +220,6 @@ function Me() {
             </Row>
           </div>
         </Fade>
-
         <Footer />
       </Container>
     </section>
