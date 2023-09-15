@@ -22,7 +22,7 @@ const TechStack = () => {
   return (
     <section>
       <Container className="">
-        <Row className='align-items-center justify-content-center' style={{ marginTop: '50px', textAlign: 'left' }}>
+        <Row className='align-items-center justify-content-center' style={{ marginTop: '50px', marginBottom: '50px', textAlign: 'left' }}>
                     <Col lg={10} md={10} className="p-4">
                         <h1 className="name py-3" style={{ textAlign: "left" }}><span><CodeIcon fontSize="large"/></span> Stacks</h1>
                         <p className="intro" style={{ textAlign: "left" }}>
