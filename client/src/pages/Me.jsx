@@ -58,7 +58,7 @@ function Me() {
     // "👋 Hi, there! I am an aspiring software developer who enjoys discovering new ideas and technologies while diving.",
     // "Currently I am pursuing my Masters in Information Systems at Northeastern University, interning at TRACT as a software development intern.",
     // "I am a full-stack developer specializing in MERN stack Front-end and Back-end jobs. I am looking for an intern position this year or a new grad job in 2024. Please feel free to get in touch with me on LinkedIn or via email."
-    "ABOUT ME",
+    "About Me",
   ];
 
   useEffect(() => {
@@ -159,7 +159,7 @@ function Me() {
 
 
               <Col lg={10} md={10} className="p-4" >
-                <h1 className="name py-5" style={{ textAlign: "left" }}>LIFE</h1>
+                <h1 className="name py-5" style={{ textAlign: "left" }}>Life</h1>
                 <p className="intro" style={{ textAlign: "left" }}>
                   I enjoy traveling and gaining diverse perspectives from
                   different people. On top of that, I am a pet enthusiast - I
