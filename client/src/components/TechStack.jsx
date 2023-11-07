@@ -7,6 +7,8 @@ import java from "../assets/java.png";
 import js from "../assets/java-script.png";
 import dj from "../assets/django.svg";
 import CodeIcon from '@mui/icons-material/Code';
+import next from "../assets/next.svg";
+
 
 const TechStack = () => {
   const renderTechIcon = (src, alt) => (
@@ -42,9 +44,11 @@ const TechStack = () => {
               {renderTechIcon(js, "js")}
             </Row>
             <Row className="align-items-center justify-content-center">
+            {renderTechIcon(next, "next")}
               {renderTechIcon(java, "java")}
               {renderTechIcon(nodejs, "nodejs")}
               {renderTechIcon(dj, "dj")}
+              
             </Row>
           </Col>
           <Col lg={2}></Col>

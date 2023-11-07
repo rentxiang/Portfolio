@@ -13,6 +13,10 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import Astria from "../assets/AstriaTodoAI.png";
 import Joi from "../assets/Joi.webp";
+import Joiai from "../assets/Joiai.png";
+import Joiai2 from "../assets/Joiai2.png";
+
+
 import Huskyhub from "../assets/Huskyhub.png";
 import neu from "../assets/logo_husky.ico";
 import ProjectItem from "./ProjectItem";
@@ -48,6 +52,30 @@ const Projects = () => {
   }, []);
 
   const projectsData = [
+    {
+      title: "JOI.AI",
+      images: [Joi, Joiai, Joiai2],
+      imageLink: "https://joi-ai.vercel.app/",
+      about:
+        "Joi.ai is a SaaS AI companion website where users can create and chat with role-based AIs",
+      techs: "Next.js, Typescript, Prisma, Tailwind CSS, shadcn ui, langchain and Openai API",
+      position:
+        "Built & developed the full-stack",
+      breadcrumbs: [
+        <Link
+          underline="hover"
+          key="1"
+          color="inherit"
+          href="https://joi-ai.vercel.app/"
+          style={{ marginRight: "10px" }}
+        >
+          <span className="boldsub">
+            <KeyboardArrowRightIcon xs={{ fontSize: "small", color: "red" }} />
+            SEE PROJECT
+          </span>
+        </Link>,
+      ],
+    },
     {
       title: "TRACT",
       images: [tract],
@@ -87,30 +115,6 @@ const Projects = () => {
           key="1"
           color="inherit"
           href="https://movieprox.vercel.app/"
-          style={{ marginRight: "10px" }}
-        >
-          <span className="boldsub">
-            <KeyboardArrowRightIcon xs={{ fontSize: "small", color: "red" }} />
-            SEE PROJECT
-          </span>
-        </Link>,
-      ],
-    },
-    {
-      title: "JOI",
-      images: [Joi, Astria],
-      imageLink: "https://github.com/rentxiang/TodoApp/tree/master/client",
-      about:
-        "Joi is Todo AI assistant solution built with react and OpenAI API for Astria. Users can effortlessly plan their tasks or seek instructions and steps from the AI for their todos.",
-      techs: "Javascript, React, Node.js, Express",
-      position:
-        "Developed the todos CRUD functionalities, user interfaces and server APIs with Javacripte and Express",
-      breadcrumbs: [
-        <Link
-          underline="hover"
-          key="1"
-          color="inherit"
-          href="https://github.com/rentxiang/TodoApp/tree/master/client"
           style={{ marginRight: "10px" }}
         >
           <span className="boldsub">
